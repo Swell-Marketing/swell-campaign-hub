@@ -21,4 +21,4 @@
 - [x] Implement a conditional verified-data dashboard state alongside the explicit no-data state.
 - [x] Add tests covering the verified-data dashboard rendering path.
 - [x] Save a new release checkpoint for the evidence, dashboard, and Pixel extension.
-- [ ] Save the final evidence, dashboard, and Pixel extension checkpoint after validation.
+- [x] Save the final evidence, dashboard, and Pixel extension checkpoint after validation.
