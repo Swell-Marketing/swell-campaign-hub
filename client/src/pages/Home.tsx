@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   ArrowDownRight,
   ArrowUpRight,
@@ -12,6 +12,9 @@ import {
   X,
 } from "lucide-react";
 import { CAMPAIGN_LINKS, CONTACT, METHOD_STAGES, NAV_LINKS } from "@/lib/campaign";
+import { initializeMetaPixel, trackMetaIntent } from "@/lib/metaPixel";
+import { TRACKING_EVENTS, type TrackingEventName } from "@/lib/tracking";
+import { PerformanceDashboard } from "@/components/PerformanceDashboard";
 
 const postCards = [
   {
@@ -57,9 +60,9 @@ function BrandMark({ compact = false }: { compact?: boolean }) {
   );
 }
 
-function DirectionalLink({ href, children }: { href: string; children: React.ReactNode }) {
+function DirectionalLink({ href, children, onClick }: { href: string; children: React.ReactNode; onClick?: () => void }) {
   return (
-    <a className="text-link" href={href} target="_blank" rel="noreferrer">
+    <a className="text-link" href={href} target="_blank" rel="noreferrer" onClick={onClick}>
       <span>{children}</span>
       <ArrowUpRight size={15} aria-hidden="true" />
     </a>
@@ -68,8 +71,26 @@ function DirectionalLink({ href, children }: { href: string; children: React.Rea
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [analyticsChoice, setAnalyticsChoice] = useState<"unknown" | "granted" | "declined">("unknown");
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
+  const trackIntent = (eventName: TrackingEventName, source: string) => trackMetaIntent(eventName, source);
+
+  useEffect(() => {
+    const savedChoice = window.localStorage.getItem("swell:analytics-consent");
+    if (savedChoice === "granted") {
+      setAnalyticsChoice("granted");
+      initializeMetaPixel();
+    } else if (savedChoice === "declined") {
+      setAnalyticsChoice("declined");
+    }
+  }, []);
+
+  const chooseAnalytics = (choice: "granted" | "declined") => {
+    window.localStorage.setItem("swell:analytics-consent", choice);
+    setAnalyticsChoice(choice);
+    if (choice === "granted") initializeMetaPixel();
+  };
 
   return (
     <div className="site-shell" id="top">
@@ -78,12 +99,12 @@ export default function Home() {
           <BrandMark />
           <nav className="desktop-nav" aria-label="Primary navigation">
             {NAV_LINKS.map((link) => (
-              <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
+              <a key={link.label} href={link.href} target="_blank" rel="noreferrer" onClick={() => trackIntent(TRACKING_EVENTS.navigationIntent, link.label.toLowerCase())}>
                 {link.label}
               </a>
             ))}
           </nav>
-          <a className="header-cta" href={CAMPAIGN_LINKS.diagnosticHero}>
+          <a className="header-cta" href={CAMPAIGN_LINKS.diagnosticHero} onClick={() => trackIntent(TRACKING_EVENTS.diagnosticIntent, "header")}>
             <span>Run the diagnostic</span>
             <ArrowUpRight size={15} aria-hidden="true" />
           </a>
@@ -100,12 +121,12 @@ export default function Home() {
         {mobileMenuOpen && (
           <nav className="mobile-nav" aria-label="Mobile navigation">
             {NAV_LINKS.map((link) => (
-              <a key={link.label} href={link.href} target="_blank" rel="noreferrer" onClick={closeMobileMenu}>
+              <a key={link.label} href={link.href} target="_blank" rel="noreferrer" onClick={() => { trackIntent(TRACKING_EVENTS.navigationIntent, `mobile_${link.label.toLowerCase()}`); closeMobileMenu(); }}>
                 {link.label}
                 <ChevronRight size={18} aria-hidden="true" />
               </a>
             ))}
-            <a className="mobile-nav__cta" href={CAMPAIGN_LINKS.diagnosticHero} onClick={closeMobileMenu}>
+            <a className="mobile-nav__cta" href={CAMPAIGN_LINKS.diagnosticHero} onClick={() => { trackIntent(TRACKING_EVENTS.diagnosticIntent, "mobile_menu"); closeMobileMenu(); }}>
               Run the free diagnostic
             </a>
           </nav>
@@ -135,10 +156,10 @@ export default function Home() {
               The room remembers brands it can verify. Swell finds where answers overlook or misrepresent your brand, then builds evidence machines can inspect.
             </p>
             <div className="hero__actions reveal-item">
-              <a className="button button--lime" href={CAMPAIGN_LINKS.diagnosticHero}>
+              <a className="button button--lime" href={CAMPAIGN_LINKS.diagnosticHero} onClick={() => trackIntent(TRACKING_EVENTS.diagnosticIntent, "hero")}>
                 Run the free GEO diagnostic <ArrowUpRight size={18} aria-hidden="true" />
               </a>
-              <a className="button button--ghost" href={CAMPAIGN_LINKS.booking} target="_blank" rel="noreferrer">
+              <a className="button button--ghost" href={CAMPAIGN_LINKS.booking} target="_blank" rel="noreferrer" onClick={() => trackIntent(TRACKING_EVENTS.workingSessionIntent, "hero")}>
                 Book a working session <MoveRight size={18} aria-hidden="true" />
               </a>
             </div>
@@ -162,7 +183,7 @@ export default function Home() {
               <p>
                 This campaign hub carries the Swell starter series from social attention into one clear decision path: establish the evidence, inspect the first constraint, then choose the next step.
               </p>
-              <DirectionalLink href={CAMPAIGN_LINKS.diagnosticHero}>Start with the representation gap</DirectionalLink>
+              <DirectionalLink href={CAMPAIGN_LINKS.diagnosticHero} onClick={() => trackIntent(TRACKING_EVENTS.diagnosticIntent, "campaign_intro")}>Start with the representation gap</DirectionalLink>
             </div>
           </div>
         </section>
@@ -210,7 +231,7 @@ export default function Home() {
                     <p className="post-card__eyebrow">{post.eyebrow}</p>
                     <h3>{post.title}</h3>
                     <p>{post.body}</p>
-                    <a href={post.href} className="post-card__cta">
+                    <a href={post.href} className="post-card__cta" onClick={() => trackIntent(TRACKING_EVENTS.postIntent, post.id)}>
                       {post.cta} <ArrowDownRight size={17} aria-hidden="true" />
                     </a>
                   </div>
@@ -246,7 +267,52 @@ export default function Home() {
           </div>
           <div className="method-section__footer">
             <span><Sparkles size={17} aria-hidden="true" /> Evidence-led by design</span>
-            <DirectionalLink href={CAMPAIGN_LINKS.method}>Explore the Swell method</DirectionalLink>
+            <DirectionalLink href={CAMPAIGN_LINKS.method} onClick={() => trackIntent(TRACKING_EVENTS.navigationIntent, "method_section")}>Explore the Swell method</DirectionalLink>
+          </div>
+        </section>
+
+        <section className="evidence-section" aria-labelledby="evidence-title">
+          <div className="page-container">
+            <div className="evidence-section__header">
+              <div>
+                <p className="section-kicker">Case-study evidence</p>
+                <h2 id="evidence-title">Trust what can be<br /><em>checked.</em></h2>
+              </div>
+              <p>
+                Swell does not turn a finished engagement into a vague success story. A publishable record needs an accountable source, a defined scope, a review date, and permission to share it.
+              </p>
+            </div>
+            <div className="evidence-grid">
+              <article className="evidence-standard">
+                <div className="evidence-standard__seal"><Check size={19} aria-hidden="true" /></div>
+                <p className="post-card__eyebrow">Publication standard</p>
+                <h3>Evidence before<br />the headline.</h3>
+                <ul>
+                  <li><span>01</span> A named first-party or independently verifiable source</li>
+                  <li><span>02</span> A clearly bounded question, scope, and timeframe</li>
+                  <li><span>03</span> A review state and approval for public use</li>
+                </ul>
+              </article>
+              <article className="evidence-empty">
+                <div className="evidence-empty__eyebrow"><span className="pulse-dot" /> Evidence ledger status</div>
+                <h3>No approved client<br />outcome record is<br /><em>published here yet.</em></h3>
+                <p>This hub will show case evidence only when the source record and publication approval are available. Until then, it keeps the claim boundary visible.</p>
+                <a href={CAMPAIGN_LINKS.booking} target="_blank" rel="noreferrer" className="text-link" onClick={() => trackIntent(TRACKING_EVENTS.workingSessionIntent, "case_evidence")}>Discuss an evidence baseline <ArrowUpRight size={15} aria-hidden="true" /></a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="performance-section" aria-labelledby="performance-title">
+          <div className="page-container">
+            <div className="performance-section__header">
+              <div>
+                <p className="section-kicker">Campaign pulse</p>
+                <h2 id="performance-title">Results need a<br /><em>source record.</em></h2>
+              </div>
+              <p>Post-performance becomes visible here only after the originating platform data is verified and the reporting window is recorded.</p>
+            </div>
+            <PerformanceDashboard />
           </div>
         </section>
 
@@ -258,7 +324,7 @@ export default function Home() {
             <p className="diagnostic-banner__lede">
               Five questions reveal where identity, access, evidence, authority, or measurement breaks first. No vanity score. Just the next thing worth verifying.
             </p>
-            <a className="button button--ink" href={CAMPAIGN_LINKS.diagnosticHero}>
+            <a className="button button--ink" href={CAMPAIGN_LINKS.diagnosticHero} onClick={() => trackIntent(TRACKING_EVENTS.diagnosticIntent, "diagnostic_banner")}>
               Open the free diagnostic <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </div>
@@ -272,7 +338,7 @@ export default function Home() {
             <p>
               Name what the AI product says, what your evidence supports, and why the difference matters commercially. We will recommend one next step.
             </p>
-            <a className="button button--outline" href={CAMPAIGN_LINKS.booking} target="_blank" rel="noreferrer">
+            <a className="button button--outline" href={CAMPAIGN_LINKS.booking} target="_blank" rel="noreferrer" onClick={() => trackIntent(TRACKING_EVENTS.workingSessionIntent, "working_session") }>
               Book a working session <MoveRight size={18} aria-hidden="true" />
             </a>
           </div>
@@ -288,12 +354,12 @@ export default function Home() {
           <div className="footer-grid">
             <div>
               <p className="footer-label">Start here</p>
-              <a href={CAMPAIGN_LINKS.diagnosticHero}>Free GEO Diagnostic</a>
-              <a href={CAMPAIGN_LINKS.booking} target="_blank" rel="noreferrer">Book a working session</a>
+              <a href={CAMPAIGN_LINKS.diagnosticHero} onClick={() => trackIntent(TRACKING_EVENTS.diagnosticIntent, "footer")}>Free GEO Diagnostic</a>
+              <a href={CAMPAIGN_LINKS.booking} target="_blank" rel="noreferrer" onClick={() => trackIntent(TRACKING_EVENTS.workingSessionIntent, "footer")}>Book a working session</a>
             </div>
             <div>
               <p className="footer-label">Explore</p>
-              {NAV_LINKS.map((link) => <a key={link.label} href={link.href} target="_blank" rel="noreferrer">{link.label}</a>)}
+              {NAV_LINKS.map((link) => <a key={link.label} href={link.href} target="_blank" rel="noreferrer" onClick={() => trackIntent(TRACKING_EVENTS.navigationIntent, `footer_${link.label.toLowerCase()}`)}>{link.label}</a>)}
             </div>
             <div>
               <p className="footer-label">Contact</p>
@@ -308,6 +374,16 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {analyticsChoice === "unknown" && (
+        <section className="analytics-consent" aria-label="Optional analytics preference">
+          <p><strong>Optional analytics</strong> — Allow Swell to measure page and intent signals on this campaign hub.</p>
+          <div>
+            <button type="button" className="analytics-consent__decline" onClick={() => chooseAnalytics("declined")}>Decline</button>
+            <button type="button" className="analytics-consent__accept" onClick={() => chooseAnalytics("granted")}>Allow analytics</button>
+          </div>
+        </section>
+      )}
     </div>
   );
 }

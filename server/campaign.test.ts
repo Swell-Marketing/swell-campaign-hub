@@ -2,7 +2,9 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import Home from "../client/src/pages/Home";
+import { PerformanceDashboard } from "../client/src/components/PerformanceDashboard";
 import { CAMPAIGN_LINKS, METHOD_STAGES, NAV_LINKS } from "../client/src/lib/campaign";
+import { TRACKING_EVENTS } from "../client/src/lib/tracking";
 
 describe("Swell campaign landing configuration", () => {
   it("contains the required canonical navigation labels", () => {
@@ -43,5 +45,42 @@ describe("Swell campaign landing configuration", () => {
       const htmlHref = href.replaceAll("&", "&amp;");
       expect(markup).toContain(`href=\"${htmlHref}\"`);
     });
+  });
+
+  it("keeps trust and performance areas explicitly evidence-only until data is verified", () => {
+    const markup = renderToStaticMarkup(createElement(Home));
+
+    expect(markup).toContain("Evidence before");
+    expect(markup).toContain("the headline.");
+    expect(markup).toContain("No approved client");
+    expect(markup).toContain("outcome record is");
+    expect(markup).toContain("No verified campaign data");
+    expect(markup).toContain("is available yet.");
+  });
+
+  it("uses an intent-only browser tracking contract on this campaign hub", () => {
+    expect(TRACKING_EVENTS).toEqual({
+      diagnosticIntent: "SwellDiagnosticIntent",
+      workingSessionIntent: "SwellWorkingSessionIntent",
+      postIntent: "SwellPostIntent",
+      navigationIntent: "SwellNavigationIntent",
+    });
+  });
+
+  it("renders the verified dashboard state only from a supplied source-backed record", () => {
+    const markup = renderToStaticMarkup(createElement(PerformanceDashboard, {
+      data: {
+        sourceLabel: "Approved source record",
+        sourceUrl: "https://example.com/approved-source-record",
+        reportingWindow: "Declared reporting window",
+        verifiedAt: "Source review complete",
+        metrics: [{ label: "Approved field", value: "Approved value", detail: "Source-backed" }],
+      },
+    }));
+
+    expect(markup).toContain('data-state="verified"');
+    expect(markup).toContain("Approved source record");
+    expect(markup).toContain("Approved field");
+    expect(markup).toContain("Approved value");
   });
 });

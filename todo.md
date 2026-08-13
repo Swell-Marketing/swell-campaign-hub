@@ -13,3 +13,12 @@
 - [x] Save a release checkpoint with all completed work marked accurately.
 - [x] Extend executed tests to assert The Signal, The Method, and The Diagnostic labels appear in the rendered landing page.
 - [x] Extend executed tests to cover every canonical navigation and tracked CTA destination used by the landing page.
+- [x] Add an evidence-only case-study module that does not claim unavailable client outcomes.
+- [x] Add a post-performance dashboard with explicit no-data and verified-data states.
+- [x] Add the approved Meta Pixel ID through managed environment configuration and instrument intent events.
+- [x] Add tests for evidence disclosure, dashboard state, and Pixel event contracts.
+- [x] Validate the extended landing page and save a release checkpoint.
+- [x] Implement a conditional verified-data dashboard state alongside the explicit no-data state.
+- [x] Add tests covering the verified-data dashboard rendering path.
+- [x] Save a new release checkpoint for the evidence, dashboard, and Pixel extension.
+- [ ] Save the final evidence, dashboard, and Pixel extension checkpoint after validation.
