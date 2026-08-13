@@ -22,3 +22,8 @@
 - [x] Add tests covering the verified-data dashboard rendering path.
 - [x] Save a new release checkpoint for the evidence, dashboard, and Pixel extension.
 - [x] Save the final evidence, dashboard, and Pixel extension checkpoint after validation.
+- [x] Add an approved-source case-study record contract without pre-populating client claims.
+- [x] Add a consent-aware Pixel event test utility that verifies browser event dispatch locally.
+- [x] Add automated tests for source-record disclosure and consent-gated event verification.
+- [ ] Request approved source records before displaying any client results publicly.
+- [ ] Validate the new utility and save a release checkpoint.

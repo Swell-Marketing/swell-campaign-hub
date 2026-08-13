@@ -12,9 +12,12 @@ import {
   X,
 } from "lucide-react";
 import { CAMPAIGN_LINKS, CONTACT, METHOD_STAGES, NAV_LINKS } from "@/lib/campaign";
+import { approvedCaseStudyRecords } from "@/lib/evidence";
 import { initializeMetaPixel, trackMetaIntent } from "@/lib/metaPixel";
 import { TRACKING_EVENTS, type TrackingEventName } from "@/lib/tracking";
+import { CaseStudyEvidence } from "@/components/CaseStudyEvidence";
 import { PerformanceDashboard } from "@/components/PerformanceDashboard";
+import { PixelEventTestUtility } from "@/components/PixelEventTestUtility";
 
 const postCards = [
   {
@@ -293,12 +296,7 @@ export default function Home() {
                   <li><span>03</span> A review state and approval for public use</li>
                 </ul>
               </article>
-              <article className="evidence-empty">
-                <div className="evidence-empty__eyebrow"><span className="pulse-dot" /> Evidence ledger status</div>
-                <h3>No approved client<br />outcome record is<br /><em>published here yet.</em></h3>
-                <p>This hub will show case evidence only when the source record and publication approval are available. Until then, it keeps the claim boundary visible.</p>
-                <a href={CAMPAIGN_LINKS.booking} target="_blank" rel="noreferrer" className="text-link" onClick={() => trackIntent(TRACKING_EVENTS.workingSessionIntent, "case_evidence")}>Discuss an evidence baseline <ArrowUpRight size={15} aria-hidden="true" /></a>
-              </article>
+              <CaseStudyEvidence records={approvedCaseStudyRecords} />
             </div>
           </div>
         </section>
@@ -313,6 +311,7 @@ export default function Home() {
               <p>Post-performance becomes visible here only after the originating platform data is verified and the reporting window is recorded.</p>
             </div>
             <PerformanceDashboard />
+            <PixelEventTestUtility analyticsChoice={analyticsChoice} />
           </div>
         </section>
 

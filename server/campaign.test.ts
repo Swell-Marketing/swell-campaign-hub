@@ -3,6 +3,8 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import Home from "../client/src/pages/Home";
 import { PerformanceDashboard } from "../client/src/components/PerformanceDashboard";
+import { CaseStudyEvidence } from "../client/src/components/CaseStudyEvidence";
+import { PixelEventTestUtility } from "../client/src/components/PixelEventTestUtility";
 import { CAMPAIGN_LINKS, METHOD_STAGES, NAV_LINKS } from "../client/src/lib/campaign";
 import { TRACKING_EVENTS } from "../client/src/lib/tracking";
 
@@ -82,5 +84,32 @@ describe("Swell campaign landing configuration", () => {
     expect(markup).toContain("Approved source record");
     expect(markup).toContain("Approved field");
     expect(markup).toContain("Approved value");
+  });
+
+  it("keeps case-study claims absent until an approved record is provided", () => {
+    const emptyMarkup = renderToStaticMarkup(createElement(CaseStudyEvidence, { records: [] }));
+    const approvedMarkup = renderToStaticMarkup(createElement(CaseStudyEvidence, {
+      records: [{
+        clientLabel: "Approved client label",
+        sourceName: "Approved source record",
+        sourceUrl: "https://example.com/approved-source-record",
+        scope: "Approved scope",
+        reportingWindow: "Approved window",
+        reviewedAt: "Approved review",
+        sourceSupportedFinding: "Approved source-supported finding",
+      }],
+    }));
+
+    expect(emptyMarkup).toContain("No approved client");
+    expect(approvedMarkup).toContain("Approved client label");
+    expect(approvedMarkup).toContain("Approved source-supported finding");
+  });
+
+  it("renders the consent-aware local Pixel event test utility only when operators enable it", () => {
+    const markup = renderToStaticMarkup(createElement(PixelEventTestUtility, { analyticsChoice: "granted", forceOpen: true }));
+
+    expect(markup).toContain("Pixel event");
+    expect(markup).toContain("Test diagnostic intent");
+    expect(markup).toContain("Open Meta Events Manager Test Events");
   });
 });
