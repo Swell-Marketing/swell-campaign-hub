@@ -31,3 +31,47 @@
 - [x] Assess each candidate’s source, scope, reporting window, and publication eligibility.
 - [x] Add only publication-approved evidence records to the public ledger and retain withheld-data states for all other material.
 - [x] Test the resulting evidence ledger and save a checkpoint.
+- [ ] Inventory au-re.org, aureusreschiomanus.netlify.app, arctura.org, and basicbiotech.manus.space as candidate evidence sources.
+- [ ] Inspect authorized remote materials for attributable source records without exposing confidential content.
+- [ ] Assess the new candidates against the approved evidence-record contract and update the ledger only when publication requirements are met.
+- [ ] Validate the resulting public evidence state and save a checkpoint.
+- [x] Draft a compliant public case-study template using only approved evidence fields and explicit placeholders for unavailable data.
+- [x] Add an internal approval checklist that prevents unverified, confidential, projected, or unauthorized claims from reaching the public ledger.
+- [x] Assess completed commercial infrastructure and remaining launch controls for revenue readiness.
+- [x] Produce a claim-safe first-cashflow activation sequence with explicit measurement prerequisites.
+- [x] Map current products, pricing, payment collection, sales pages, fulfillment, acquisition, and reporting assets against the minimum commercial operating chain.
+- [x] Draft the missing commercial-launch controls and a sequenced readiness checklist without reintroducing public self-service checkout.
+- [x] Prepare package sheets and consultative proposal materials for Swell GEO Growth, Swell GEO Scale, and ARM Mandate Pro.
+- [x] Inspect the ARM Agency repository, deployment configuration, and current www.arm-agency.com domain state.
+- [x] Remediate and validate the ARM Agency deployment path, then prepare the final domain cutover checklist with required confirmation gates.
+- [x] Fix the production ARM Agency Signal Diagnostic JavaScript parse error and verify the no-data questionnaire flow.
+- [x] Normalize ARM Agency canonical, Open Graph, JSON-LD, robots.txt, and sitemap references to https://www.arm-agency.com/ and verify production responses.
+- [x] Verify or remove each ARM Agency sameAs reference so production schema contains only owned, reachable identity links.
+- [ ] Submit one owner-authorized, clearly labeled internal lead to verify the external ARM Agency intake record and approved post-submission handling.
+- [x] Review the Swell GEO audit’s qualification flow and identify the smallest set of decision-useful ARM Agency intake questions.
+- [x] Implement a streamlined ARM Agency intake that captures qualification context, maintains the diagnostic result, and preserves a consultative handoff.
+- [x] Validate and deploy the revised ARM Agency intake without reintroducing unsupported claims or public self-service checkout.
+- [x] Map the current ARM buyer journey from free diagnostic through paid audit and ongoing engagements.
+- [x] Identify and resolve duplicate promises, conversion friction, and qualification gaps between the diagnostic and paid audit.
+- [x] Define the simplified ARM buyer journey and a sequenced implementation plan before changing live conversion copy.
+- [x] Apply the approved buyer-journey simplification: rename the free `/audit/` experience to Signal Check, unify CTAs into one Audit Fit Review path, and remove conflicting self-serve and duplicate-form language.
+- [ ] Validate the revised ARM buyer journey end-to-end: homepage CTA routing, Signal Check copy, pricing language, and single intake-gateway behavior.
+- [x] Inventory the ARM/Swell ecosystem’s current revenue infrastructure, recurring obligations, and manual operating dependencies.
+- [x] Distinguish verified, unknown, and optional launch-cost categories without inventing expenses.
+- [x] Define the autonomy loops, funding decision framework, and ordered controls required for a self-reinforcing ecosystem.
+- [x] Distinguish Mercury receivables from payable rent evidence and document the source provenance in the cash-floor model.
+- [ ] Obtain Vercel and Hostinger billing and renewal records; keep infrastructure timing and cost open until sourced.
+- [x] Recalculate the cash floor and funding threshold from verified fixed obligations and available operating cash.
+- [x] Retrieve Gmail invoice and receipt records for recurring infrastructure and operating obligations, then reconcile them with Mercury evidence.
+- [x] Inspect all plausible uploaded receipt files and include only attributable operating obligations in the cash-floor model.
+- [x] Prioritize the remaining control gaps by their effect on qualified lead generation, proposal conversion, and first collection.
+- [x] Create a source-governed lead-to-sale operating board covering CTA source, qualification state, owner, next action, proposal status, and collection state.
+- [ ] Reconcile ARM and Swell public conversion paths so every primary CTA has one clear consultative next step and a verifiable handoff.
+- [ ] Validate the ARM Signal Check and Audit Fit Review routes end-to-end, including owner-authorized intake handling and attribution capture.
+- [x] Define the no-spend 30-day acquisition cadence, response standard, and proposal follow-up sequence for the three approved offers.
+- [x] Validate the campaign hub’s current conversion routes, tests, type checks, and production build; save a checkpoint for the completed control work.
+- [x] Remove unapproved numeric market statistics and illustrative performance values from the live ARM Agency sales path.
+- [x] Align ARM’s live offer labels, prices, and scope-first CTAs with the approved consultative sales model.
+- [x] Commit the ARM Agency claim-safety and offer-alignment changes, deploy them to production, and verify the live homepage removes unapproved stats, illustrative performance values, and stale offer pricing.
+- [x] Re-run live buyer-journey validation against the deployed ARM homepage and audit route, confirming Signal Check routing, Audit Fit Review CTAs, and approved ARM offer labels and pricing.
+- [x] Align the ARM Signal Check footer offer labels and prices with the approved consultative ARM sales menu.
