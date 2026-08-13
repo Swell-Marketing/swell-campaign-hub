@@ -26,4 +26,8 @@
 - [x] Add a consent-aware Pixel event test utility that verifies browser event dispatch locally.
 - [x] Add automated tests for source-record disclosure and consent-gated event verification.
 - [ ] Request approved source records before displaying any client results publicly.
-- [ ] Validate the new utility and save a release checkpoint.
+- [x] Validate the new utility and save a release checkpoint.
+- [x] Inventory the supplied ARM ecosystem properties and the OWL tracker for candidate evidence sources.
+- [x] Assess each candidate’s source, scope, reporting window, and publication eligibility.
+- [x] Add only publication-approved evidence records to the public ledger and retain withheld-data states for all other material.
+- [x] Test the resulting evidence ledger and save a checkpoint.
