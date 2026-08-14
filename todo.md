@@ -88,7 +88,7 @@
 - [ ] Verify that internal ARM test records do not trigger unintended external follow-up or automated commercial contact.
 - [ ] Submit one owner-authorized Audit Fit Review through the live browser form and verify its downstream record plus user-facing success handling.
 - [ ] Read back the live ARM Signal Check test record when Base44 access is available, confirming source, service interest, status, and linked audit creation.
-- [ ] Verify the HubSpot contact and meeting attribution fields for the Swell test booking, not only URL-level UTM parameters.
+- [x] Verify the HubSpot contact and meeting attribution fields for the Swell test booking, not only URL-level UTM parameters.
 - [ ] Configure a durable HubSpot source/campaign/content attribution property set and a booking-handoff mapping before paid acquisition is activated.
 - [ ] Exercise and document each primary ARM homepage CTA family through its actual production destination and downstream handoff.
 - [ ] Expand the internal-test follow-up review across mailbox templates, broader Gmail searches, and downstream automation logs.
@@ -96,7 +96,16 @@
 - [x] Create the dedicated HubSpot contact-property group and core ARM/Swell Source, Medium, Campaign, and Content fields for booking attribution.
 - [ ] Populate the four custom attribution fields on an owner-controlled test contact and re-test the booking handoff before relying on HubSpot as the reporting source of record.
 - [x] Populate the existing Internal Attribution Test contact with owner-controlled sample source, medium, campaign, and content values, then verify the values persist in HubSpot.
-- [ ] Submit a separate owner-controlled Swell booking from a UTM-tagged source route and verify the resulting contact automatically exposes usable attribution fields without relying only on URL parameters.
+- [x] Submit a separate owner-controlled Swell booking from a UTM-tagged source route and verify the resulting contact automatically exposes usable attribution fields without relying only on URL parameters.
 - [x] Confirm through an owner-controlled tagged booking that HubSpot creates the meeting record but does not currently auto-write the URL attribution tuple to the custom contact fields.
-- [ ] Add a first-party capture or automation layer that writes the Swell booking URL’s source, medium, campaign, and content values into `armswell_*` contact properties before paid acquisition is activated.
+- [x] Confirm through the owner-controlled tagged booking that HubSpot natively auto-captures source, medium, and campaign in its last-booking contact properties.
+- [ ] Consider a first-party capture or automation layer for `armswell_*` values only if a future reporting requirement needs a separate per-conversion content dimension; native booking attribution is now sufficient for source, medium, campaign, and CTA variant.
+- [x] Establish a durable `utm_content` reporting convention for booking links through documented campaign-name encoding that preserves the CTA variant.
+- [x] Encode each Swell booking CTA variant in the native `utm_campaign` value and verify HubSpot’s last-booking campaign property records the expected value without workflow automation.
+- [x] Complete the owner-controlled booking retest for the deployed CTA-variant campaign convention and verify HubSpot records the encoded campaign value.
+- [x] Assess the enabled Apollo and Zapier capabilities, then define a no-paid-upgrade lead-research and automation path governed by the approved outreach standard.
+- [ ] Access the idle Perplexity subscription associated with `virtualmase@gmail.com` through an owner-controlled login, then apply the documented secure research-use policy without exposing credentials.
+- [x] Confirm the current Perplexity browser account is `ops@arm-agency.com` on the Free plan and document the account-access gap.
+- [x] Review user-authorized Gmail source material for marketing-language patterns and create a source-grounded full-scale Markdown language guide.
+- [x] Define a supervised subagent operating model that amplifies the team’s strongest disciplines without allowing unreviewed claims, outreach, or financial actions.
 - [ ] Re-run the owner-controlled booking test with a fresh contact identity after the attribution capture layer is implemented.
