@@ -31,10 +31,10 @@
 - [x] Assess each candidate’s source, scope, reporting window, and publication eligibility.
 - [x] Add only publication-approved evidence records to the public ledger and retain withheld-data states for all other material.
 - [x] Test the resulting evidence ledger and save a checkpoint.
-- [ ] Inventory au-re.org, aureusreschiomanus.netlify.app, arctura.org, and basicbiotech.manus.space as candidate evidence sources.
-- [ ] Inspect authorized remote materials for attributable source records without exposing confidential content.
-- [ ] Assess the new candidates against the approved evidence-record contract and update the ledger only when publication requirements are met.
-- [ ] Validate the resulting public evidence state and save a checkpoint.
+- [x] Inventory au-re.org, aureusreschiomanus.netlify.app, arctura.org, and basicbiotech.manus.space as candidate evidence sources.
+- [x] Inspect authorized remote materials for attributable source records without exposing confidential content.
+- [x] Assess the new candidates against the approved evidence-record contract and update the ledger only when publication requirements are met; no reviewed source qualified for publication.
+- [x] Validate the resulting public evidence state after the additional authorized-source review: 13 tests, TypeScript check, and production build passed while the approved ledger remained empty.
 - [x] Draft a compliant public case-study template using only approved evidence fields and explicit placeholders for unavailable data.
 - [x] Add an internal approval checklist that prevents unverified, confidential, projected, or unauthorized claims from reaching the public ledger.
 - [x] Assess completed commercial infrastructure and remaining launch controls for revenue readiness.
