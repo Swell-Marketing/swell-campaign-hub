@@ -60,7 +60,7 @@
 - [x] Distinguish verified, unknown, and optional launch-cost categories without inventing expenses.
 - [x] Define the autonomy loops, funding decision framework, and ordered controls required for a self-reinforcing ecosystem.
 - [x] Distinguish Mercury receivables from payable rent evidence and document the source provenance in the cash-floor model.
-- [ ] Obtain Vercel and Hostinger billing and renewal records; keep infrastructure timing and cost open until sourced.
+- [x] Obtain Vercel and Hostinger billing and renewal records for the documented core infrastructure: Vercel Hobby is $0/month and Hostinger’s next ARM hosting/email/domain renewal bundle is $242.95 on February 20, 2027.
 - [x] Recalculate the cash floor and funding threshold from verified fixed obligations and available operating cash.
 - [x] Retrieve Gmail invoice and receipt records for recurring infrastructure and operating obligations, then reconcile them with Mercury evidence.
 - [x] Inspect all plausible uploaded receipt files and include only attributable operating obligations in the cash-floor model.
