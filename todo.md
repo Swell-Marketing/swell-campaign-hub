@@ -96,7 +96,7 @@
 - [ ] Expand the internal-test follow-up review across mailbox templates, broader Gmail searches, and downstream automation logs.
 - [ ] Audit every live primary ARM and Swell CTA family directly in production, recording the exact destination, UTM parameters where applicable, and observable downstream handoff evidence.
 - [x] Create the dedicated HubSpot contact-property group and core ARM/Swell Source, Medium, Campaign, and Content fields for booking attribution.
-- [ ] Populate the four custom attribution fields on an owner-controlled test contact and re-test the booking handoff before relying on HubSpot as the reporting source of record.
+- [x] Populate the four custom attribution fields on an owner-controlled test contact and re-test the booking handoff: manual values persisted, while the booking did not auto-write them, so native HubSpot source/medium/campaign fields—not `armswell_*`—remain the current reporting path.
 - [x] Populate the existing Internal Attribution Test contact with owner-controlled sample source, medium, campaign, and content values, then verify the values persist in HubSpot.
 - [x] Submit a separate owner-controlled Swell booking from a UTM-tagged source route and verify the resulting contact automatically exposes usable attribution fields without relying only on URL parameters.
 - [x] Confirm through an owner-controlled tagged booking that HubSpot creates the meeting record but does not currently auto-write the URL attribution tuple to the custom contact fields.
