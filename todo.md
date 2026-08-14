@@ -106,6 +106,7 @@
 - [x] Encode each Swell booking CTA variant in the native `utm_campaign` value and verify HubSpot’s last-booking campaign property records the expected value without workflow automation.
 - [x] Complete the owner-controlled booking retest for the deployed CTA-variant campaign convention and verify HubSpot records the encoded campaign value.
 - [x] Assess the enabled Apollo and Zapier capabilities, then define a no-paid-upgrade lead-research and automation path governed by the approved outreach standard.
+- [x] Authenticate the owner-controlled Apollo workspace before using it for source-governed prospect research; the owner-authorized workspace is active with 230 credits and no existing sequences or outbound activity.
 - [ ] Access the idle Perplexity subscription associated with `virtualmase@gmail.com` through an owner-controlled login, then apply the documented secure research-use policy without exposing credentials.
 - [x] Confirm the current Perplexity browser account is `ops@arm-agency.com` on the Free plan and document the account-access gap.
 - [x] Review user-authorized Gmail source material for marketing-language patterns and create a source-grounded full-scale Markdown language guide.
