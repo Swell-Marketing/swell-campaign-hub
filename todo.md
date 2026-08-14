@@ -75,3 +75,28 @@
 - [x] Commit the ARM Agency claim-safety and offer-alignment changes, deploy them to production, and verify the live homepage removes unapproved stats, illustrative performance values, and stale offer pricing.
 - [x] Re-run live buyer-journey validation against the deployed ARM homepage and audit route, confirming Signal Check routing, Audit Fit Review CTAs, and approved ARM offer labels and pricing.
 - [x] Align the ARM Signal Check footer offer labels and prices with the approved consultative ARM sales menu.
+- [x] Remove the unapproved Swell GEO Starter offer and align live Swell pricing and diagnostic copy to the approved consultative service menu.
+- [ ] Verify every live ARM and Swell primary CTA destination and attribution parameter, documenting the consultative next step and observable downstream handoff for each.
+- [ ] Run owner-authorized end-to-end handoff tests for both ARM and Swell routes, or capture equivalent downstream attribution evidence before declaring conversion reconciliation complete.
+- [ ] Complete the authorized internal ARM intake and Swell HubSpot handoff tests using only owner-controlled test data; record downstream attribution evidence.
+- [ ] Prepare a source-governed initial qualified-prospect list and individualized outreach sequence for the approved offers.
+- [ ] Send approved outreach only to qualified prospects with logged source, offer hypothesis, decision context, and follow-up owner.
+- [ ] Convert qualified opportunities using versioned written proposals and private collection instructions only after scope acceptance.
+- [ ] Activate approved acquisition campaigns only after a collected client engagement, delivery-owner capacity confirmation, and reconciled attribution are recorded.
+- [x] Diagnose and remediate the live ARM Base44 intake worker, which returned HTTP 500 to the owner-authorized Audit Fit Review test payload.
+- [ ] Submit one owner-authorized test through the live ARM Signal Check questionnaire, then verify the downstream record source, intent, and user-facing success handling.
+- [ ] Verify that internal ARM test records do not trigger unintended external follow-up or automated commercial contact.
+- [ ] Submit one owner-authorized Audit Fit Review through the live browser form and verify its downstream record plus user-facing success handling.
+- [ ] Read back the live ARM Signal Check test record when Base44 access is available, confirming source, service interest, status, and linked audit creation.
+- [ ] Verify the HubSpot contact and meeting attribution fields for the Swell test booking, not only URL-level UTM parameters.
+- [ ] Configure a durable HubSpot source/campaign/content attribution property set and a booking-handoff mapping before paid acquisition is activated.
+- [ ] Exercise and document each primary ARM homepage CTA family through its actual production destination and downstream handoff.
+- [ ] Expand the internal-test follow-up review across mailbox templates, broader Gmail searches, and downstream automation logs.
+- [ ] Audit every live primary ARM and Swell CTA family directly in production, recording the exact destination, UTM parameters where applicable, and observable downstream handoff evidence.
+- [x] Create the dedicated HubSpot contact-property group and core ARM/Swell Source, Medium, Campaign, and Content fields for booking attribution.
+- [ ] Populate the four custom attribution fields on an owner-controlled test contact and re-test the booking handoff before relying on HubSpot as the reporting source of record.
+- [x] Populate the existing Internal Attribution Test contact with owner-controlled sample source, medium, campaign, and content values, then verify the values persist in HubSpot.
+- [ ] Submit a separate owner-controlled Swell booking from a UTM-tagged source route and verify the resulting contact automatically exposes usable attribution fields without relying only on URL parameters.
+- [x] Confirm through an owner-controlled tagged booking that HubSpot creates the meeting record but does not currently auto-write the URL attribution tuple to the custom contact fields.
+- [ ] Add a first-party capture or automation layer that writes the Swell booking URL’s source, medium, campaign, and content values into `armswell_*` contact properties before paid acquisition is activated.
+- [ ] Re-run the owner-controlled booking test with a fresh contact identity after the attribution capture layer is implemented.
