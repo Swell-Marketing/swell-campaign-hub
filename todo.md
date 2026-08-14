@@ -47,7 +47,7 @@
 - [x] Fix the production ARM Agency Signal Diagnostic JavaScript parse error and verify the no-data questionnaire flow.
 - [x] Normalize ARM Agency canonical, Open Graph, JSON-LD, robots.txt, and sitemap references to https://www.arm-agency.com/ and verify production responses.
 - [x] Verify or remove each ARM Agency sameAs reference so production schema contains only owned, reachable identity links.
-- [ ] Submit one owner-authorized, clearly labeled internal lead to verify the external ARM Agency intake record and approved post-submission handling.
+- [x] Submit one owner-authorized, clearly labeled internal lead to verify the external ARM Agency intake record and approved post-submission handling.
 - [x] Review the Swell GEO audit’s qualification flow and identify the smallest set of decision-useful ARM Agency intake questions.
 - [x] Implement a streamlined ARM Agency intake that captures qualification context, maintains the diagnostic result, and preserves a consultative handoff.
 - [x] Validate and deploy the revised ARM Agency intake without reintroducing unsupported claims or public self-service checkout.
@@ -55,7 +55,7 @@
 - [x] Identify and resolve duplicate promises, conversion friction, and qualification gaps between the diagnostic and paid audit.
 - [x] Define the simplified ARM buyer journey and a sequenced implementation plan before changing live conversion copy.
 - [x] Apply the approved buyer-journey simplification: rename the free `/audit/` experience to Signal Check, unify CTAs into one Audit Fit Review path, and remove conflicting self-serve and duplicate-form language.
-- [ ] Validate the revised ARM buyer journey end-to-end: homepage CTA routing, Signal Check copy, pricing language, and single intake-gateway behavior.
+- [x] Validate the revised ARM buyer journey end-to-end: homepage CTA routing, Signal Check copy, pricing language, and single intake-gateway behavior.
 - [x] Inventory the ARM/Swell ecosystem’s current revenue infrastructure, recurring obligations, and manual operating dependencies.
 - [x] Distinguish verified, unknown, and optional launch-cost categories without inventing expenses.
 - [x] Define the autonomy loops, funding decision framework, and ordered controls required for a self-reinforcing ecosystem.
@@ -67,7 +67,7 @@
 - [x] Prioritize the remaining control gaps by their effect on qualified lead generation, proposal conversion, and first collection.
 - [x] Create a source-governed lead-to-sale operating board covering CTA source, qualification state, owner, next action, proposal status, and collection state.
 - [ ] Reconcile ARM and Swell public conversion paths so every primary CTA has one clear consultative next step and a verifiable handoff.
-- [ ] Validate the ARM Signal Check and Audit Fit Review routes end-to-end, including owner-authorized intake handling and attribution capture.
+- [x] Validate the ARM Signal Check and Audit Fit Review routes end-to-end, including owner-authorized intake handling and attribution capture.
 - [x] Define the no-spend 30-day acquisition cadence, response standard, and proposal follow-up sequence for the three approved offers.
 - [x] Validate the campaign hub’s current conversion routes, tests, type checks, and production build; save a checkpoint for the completed control work.
 - [x] Remove unapproved numeric market statistics and illustrative performance values from the live ARM Agency sales path.
@@ -77,8 +77,8 @@
 - [x] Align the ARM Signal Check footer offer labels and prices with the approved consultative ARM sales menu.
 - [x] Remove the unapproved Swell GEO Starter offer and align live Swell pricing and diagnostic copy to the approved consultative service menu.
 - [ ] Verify every live ARM and Swell primary CTA destination and attribution parameter, documenting the consultative next step and observable downstream handoff for each.
-- [ ] Run owner-authorized end-to-end handoff tests for both ARM and Swell routes, or capture equivalent downstream attribution evidence before declaring conversion reconciliation complete.
-- [ ] Complete the authorized internal ARM intake and Swell HubSpot handoff tests using only owner-controlled test data; record downstream attribution evidence.
+- [x] Run owner-authorized end-to-end handoff tests for both ARM and Swell routes, or capture equivalent downstream attribution evidence before declaring conversion reconciliation complete.
+- [x] Complete the authorized internal ARM intake and Swell HubSpot handoff tests using only owner-controlled test data; record downstream attribution evidence.
 - [ ] Prepare a source-governed initial qualified-prospect list and individualized outreach sequence for the approved offers.
 - [x] Assess The Owlander Group warm relationship against the current decision, authority, evidence, and capacity gates using its authorized Notion source record before drafting any outreach.
 - [ ] Obtain the Owlander relationship owner’s confirmation of the appropriate recipient, active GEO decision, contact basis, and review capacity before approving the fit-check outreach draft.
@@ -86,10 +86,10 @@
 - [ ] Convert qualified opportunities using versioned written proposals and private collection instructions only after scope acceptance.
 - [ ] Activate approved acquisition campaigns only after a collected client engagement, delivery-owner capacity confirmation, and reconciled attribution are recorded.
 - [x] Diagnose and remediate the live ARM Base44 intake worker, which returned HTTP 500 to the owner-authorized Audit Fit Review test payload.
-- [ ] Submit one owner-authorized test through the live ARM Signal Check questionnaire, then verify the downstream record source, intent, and user-facing success handling.
+- [x] Submit one owner-authorized test through the live ARM Signal Check questionnaire, then verify the downstream record source, intent, and user-facing success handling.
 - [ ] Verify that internal ARM test records do not trigger unintended external follow-up or automated commercial contact.
-- [ ] Submit one owner-authorized Audit Fit Review through the live browser form and verify its downstream record plus user-facing success handling.
-- [ ] Read back the live ARM Signal Check test record when Base44 access is available, confirming source, service interest, status, and linked audit creation.
+- [x] Submit one owner-authorized Audit Fit Review through the live browser form and verify its downstream record plus user-facing success handling.
+- [ ] Read back the live ARM Signal Check test record when Base44 access is available, confirming source, service interest, status, and the exact linked SignalAudit foreign-key relationship.
 - [x] Verify the HubSpot contact and meeting attribution fields for the Swell test booking, not only URL-level UTM parameters.
 - [x] Configure a durable HubSpot source/campaign/content attribution property set and a booking-handoff mapping before paid acquisition is activated.
 - [x] Exercise and document each primary ARM homepage CTA family through its actual production destination and observable consultative handoff.
