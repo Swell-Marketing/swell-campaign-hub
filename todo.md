@@ -101,7 +101,7 @@
 - [x] Submit a separate owner-controlled Swell booking from a UTM-tagged source route and verify the resulting contact automatically exposes usable attribution fields without relying only on URL parameters.
 - [x] Confirm through an owner-controlled tagged booking that HubSpot creates the meeting record but does not currently auto-write the URL attribution tuple to the custom contact fields.
 - [x] Confirm through the owner-controlled tagged booking that HubSpot natively auto-captures source, medium, and campaign in its last-booking contact properties.
-- [ ] Consider a first-party capture or automation layer for `armswell_*` values only if a future reporting requirement needs a separate per-conversion content dimension; native booking attribution is now sufficient for source, medium, campaign, and CTA variant.
+- [x] Decide against a first-party capture or automation layer for `armswell_*` at this stage: native HubSpot source/medium plus the encoded campaign convention already preserve service context and CTA variant; reconsider only for a future approved raw-content reporting requirement.
 - [x] Establish a durable `utm_content` reporting convention for booking links through documented campaign-name encoding that preserves the CTA variant.
 - [x] Encode each Swell booking CTA variant in the native `utm_campaign` value and verify HubSpot’s last-booking campaign property records the expected value without workflow automation.
 - [x] Complete the owner-controlled booking retest for the deployed CTA-variant campaign convention and verify HubSpot records the encoded campaign value.
