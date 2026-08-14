@@ -120,3 +120,8 @@
 - [x] Confirm the Vercel plan tier, current recurring cost, renewal settings, and payment status from an owner-visible Vercel billing source; the connected mailbox contains no Vercel billing notice for the last 365 days.
 - [ ] Obtain readback evidence for each ARM primary CTA family, including stored source, service interest, status, and linked-audit behavior where the form is submitted.
 - [ ] Verify representative Swell homepage, pricing, and diagnostic CTA families through owner-controlled bookings or equivalent HubSpot attribution evidence before treating each handoff as reconciled.
+- [x] Build a source-governed B2B software and IoT GEO prospect lane first, using public primary-source evidence and no contact activation; Frontline Data Solutions and Conga are research-qualified but contact-held.
+- [x] Build an agentic-marketing and operational-AI governance prospect lane second, using the same source and relationship-authority gates; no reviewed account cleared the initial target-band and relationship requirements.
+- [x] Locate and classify public company channels for Frontline Data Solutions and Conga without accessing personal contact data or hiring-manager routes: Frontline’s generic Contact Us form is permitted pending send confirmation; Conga’s buyer-oriented Talk to Sales form is not used.
+- [ ] Prepare and obtain explicit confirmation for one individualized, non-recruiting fit-check to each of Frontline Data Solutions and Conga; do not sequence or follow up without a reply.
+- [ ] Monitor the owner-authorized Frontline public-form fit-check for a reply; do not follow up, enrich contacts, or add the account to a sequence unless Frontline initiates a response.
