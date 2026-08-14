@@ -80,6 +80,8 @@
 - [ ] Run owner-authorized end-to-end handoff tests for both ARM and Swell routes, or capture equivalent downstream attribution evidence before declaring conversion reconciliation complete.
 - [ ] Complete the authorized internal ARM intake and Swell HubSpot handoff tests using only owner-controlled test data; record downstream attribution evidence.
 - [ ] Prepare a source-governed initial qualified-prospect list and individualized outreach sequence for the approved offers.
+- [x] Assess The Owlander Group warm relationship against the current decision, authority, evidence, and capacity gates using its authorized Notion source record before drafting any outreach.
+- [ ] Obtain the Owlander relationship owner’s confirmation of the appropriate recipient, active GEO decision, contact basis, and review capacity before approving the fit-check outreach draft.
 - [ ] Send approved outreach only to qualified prospects with logged source, offer hypothesis, decision context, and follow-up owner.
 - [ ] Convert qualified opportunities using versioned written proposals and private collection instructions only after scope acceptance.
 - [ ] Activate approved acquisition campaigns only after a collected client engagement, delivery-owner capacity confirmation, and reconciled attribution are recorded.
@@ -89,7 +91,7 @@
 - [ ] Submit one owner-authorized Audit Fit Review through the live browser form and verify its downstream record plus user-facing success handling.
 - [ ] Read back the live ARM Signal Check test record when Base44 access is available, confirming source, service interest, status, and linked audit creation.
 - [x] Verify the HubSpot contact and meeting attribution fields for the Swell test booking, not only URL-level UTM parameters.
-- [ ] Configure a durable HubSpot source/campaign/content attribution property set and a booking-handoff mapping before paid acquisition is activated.
+- [x] Configure a durable HubSpot source/campaign/content attribution property set and a booking-handoff mapping before paid acquisition is activated.
 - [ ] Exercise and document each primary ARM homepage CTA family through its actual production destination and downstream handoff.
 - [ ] Expand the internal-test follow-up review across mailbox templates, broader Gmail searches, and downstream automation logs.
 - [ ] Audit every live primary ARM and Swell CTA family directly in production, recording the exact destination, UTM parameters where applicable, and observable downstream handoff evidence.
@@ -109,3 +111,6 @@
 - [x] Review user-authorized Gmail source material for marketing-language patterns and create a source-grounded full-scale Markdown language guide.
 - [x] Define a supervised subagent operating model that amplifies the team’s strongest disciplines without allowing unreviewed claims, outreach, or financial actions.
 - [ ] Re-run the owner-controlled booking test with a fresh contact identity after the attribution capture layer is implemented.
+- [x] Remove or restore the four confirmed Coreweaver Labs 404 URLs listed in the production sitemap, then verify the linked-route and sitemap state after deployment.
+- [ ] Monitor the next Ahrefs crawls for ARM Agency and Coreweaver Labs to confirm the verified production remediations are reflected in the health reports.
+- [x] Add the owner-authorized `ARM/Swell Evidence URL` single-line contact property (`armswell_evidence_url`) to the `ARM + Swell Attribution` HubSpot group with its approved provenance description.
