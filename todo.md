@@ -92,7 +92,7 @@
 - [ ] Read back the live ARM Signal Check test record when Base44 access is available, confirming source, service interest, status, and linked audit creation.
 - [x] Verify the HubSpot contact and meeting attribution fields for the Swell test booking, not only URL-level UTM parameters.
 - [x] Configure a durable HubSpot source/campaign/content attribution property set and a booking-handoff mapping before paid acquisition is activated.
-- [ ] Exercise and document each primary ARM homepage CTA family through its actual production destination and downstream handoff.
+- [x] Exercise and document each primary ARM homepage CTA family through its actual production destination and observable consultative handoff.
 - [ ] Expand the internal-test follow-up review across mailbox templates, broader Gmail searches, and downstream automation logs.
 - [ ] Audit every live primary ARM and Swell CTA family directly in production, recording the exact destination, UTM parameters where applicable, and observable downstream handoff evidence.
 - [x] Create the dedicated HubSpot contact-property group and core ARM/Swell Source, Medium, Campaign, and Content fields for booking attribution.
@@ -117,3 +117,5 @@
 - [x] Add the owner-authorized `ARM/Swell Evidence URL` single-line contact property (`armswell_evidence_url`) to the `ARM + Swell Attribution` HubSpot group with its approved provenance description.
 - [x] Verify the Google Workspace Business Starter payment baseline for `arm-agency.com`: $16.80 was applied on August 10, 2026.
 - [x] Confirm the Vercel plan tier, current recurring cost, renewal settings, and payment status from an owner-visible Vercel billing source; the connected mailbox contains no Vercel billing notice for the last 365 days.
+- [ ] Obtain readback evidence for each ARM primary CTA family, including stored source, service interest, status, and linked-audit behavior where the form is submitted.
+- [ ] Verify representative Swell homepage, pricing, and diagnostic CTA families through owner-controlled bookings or equivalent HubSpot attribution evidence before treating each handoff as reconciled.
