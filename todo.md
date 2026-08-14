@@ -113,4 +113,7 @@
 - [ ] Re-run the owner-controlled booking test with a fresh contact identity after the attribution capture layer is implemented.
 - [x] Remove or restore the four confirmed Coreweaver Labs 404 URLs listed in the production sitemap, then verify the linked-route and sitemap state after deployment.
 - [ ] Monitor the next Ahrefs crawls for ARM Agency and Coreweaver Labs to confirm the verified production remediations are reflected in the health reports.
+- [x] Investigate the reported arm-agency.com Ahrefs health-score decline and rule out sitemap or redirect regressions from the buyer-journey changes.
 - [x] Add the owner-authorized `ARM/Swell Evidence URL` single-line contact property (`armswell_evidence_url`) to the `ARM + Swell Attribution` HubSpot group with its approved provenance description.
+- [x] Verify the Google Workspace Business Starter payment baseline for `arm-agency.com`: $16.80 was applied on August 10, 2026.
+- [x] Confirm the Vercel plan tier, current recurring cost, renewal settings, and payment status from an owner-visible Vercel billing source; the connected mailbox contains no Vercel billing notice for the last 365 days.
