@@ -1,6 +1,6 @@
-import { eq } from "drizzle-orm";
+import { desc, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertUser, opportunities, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,40 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+export async function listOpportunities() {
+  const db = await getDb();
+  if (!db) throw new Error("Database is not available");
+
+  return db.select().from(opportunities).orderBy(desc(opportunities.updatedAt));
+}
+
+export async function getOpportunityById(id: number) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is not available");
+
+  const rows = await db.select().from(opportunities).where(eq(opportunities.id, id)).limit(1);
+  return rows[0];
+}
+
+export async function createOpportunity(
+  values: Omit<typeof opportunities.$inferInsert, "id" | "createdAt" | "updatedAt">,
+) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is not available");
+
+  const result = await db.insert(opportunities).values(values);
+  const created = await getOpportunityById(Number(result[0].insertId));
+  if (!created) throw new Error("Opportunity was created but could not be read back");
+  return created;
+}
+
+export async function updateOpportunity(
+  id: number,
+  values: Partial<Omit<typeof opportunities.$inferInsert, "id" | "createdAt" | "updatedAt" | "createdByUserId">>,
+) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is not available");
+
+  await db.update(opportunities).set(values).where(eq(opportunities.id, id));
+  return getOpportunityById(id);
+}

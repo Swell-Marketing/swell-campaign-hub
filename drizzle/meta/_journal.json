@@ -8,6 +8,13 @@
       "when": 1786608171380,
       "tag": "0000_big_silver_centurion",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1786771519410,
+      "tag": "0001_fuzzy_vapor",
+      "breakpoints": true
     }
   ]
 }
