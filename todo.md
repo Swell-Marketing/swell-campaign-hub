@@ -129,3 +129,5 @@
 - [x] Verify the proposal-to-private-collection workflow is ready to use only after written scope acceptance, without adding public self-service checkout; a controlled internal deal packet now joins scope, collection, reconciliation, and onboarding.
 - [x] Establish a controlled fulfillment-to-evidence feedback loop that remains empty until an approved client source record authorizes publication.
 - [ ] Keep the owner-approved Conga general-inquiry fit-check as a non-blocking manual action; verify and log it only if the owner completes the open form.
+- [ ] Build a protected internal revenue-control board for opportunities, qualification state, evidence route, scope acceptance, private collection status, and onboarding readiness; do not expose client or payment data publicly.
+- [x] Audit the visitor-to-client path, trust evidence, traffic acquisition, meeting conversion, proposal acceptance, and collection controls; prioritize the fastest evidence-governed improvements.
