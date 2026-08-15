@@ -161,3 +161,15 @@
 - [x] Prepare a source-led Draft 02 explanatory visual showing the required agreement between visible page evidence and machine-readable declarations, without using client metrics or outcome claims.
 - [x] Design an evidence-governed Swell content-silo, hub-and-spoke, and internal-linking system that demonstrates expertise to buyers, search engines, and AI answer systems without visibility guarantees.
 - [x] Publish the first durable Swell Representation Foundations hub with source-visible guidance, crawlable contextual links, structured-data parity, and one diagnostic CTA.
+- [x] Research and propose one distinctive source-governed long-form Swell article targeting a defensible buyer question, then await separate approval before publication or distribution.
+- [x] Draft the approved long-form Representation Gap article with primary-source citations, claim boundaries, and a held-for-review on-site publication packet.
+- [ ] Build and operate a citeworthy Swell content portfolio of durable buyer resources, source logs, named methods, contextual internal links, and publication controls without fabricated proof or visibility guarantees.
+- [x] Build the Representation Gap article as an unpublished Swell static page with source-visible markup and internal links; do not deploy until exact page approval is reconfirmed.
+- [x] Publish the owner-approved Representation Gap article through the Swell resource hub, sitemap, and language-model index after final local and live validation.
+- [x] Build the source-governed Evidence Contract resource with visible-evidence-to-markup parity and one fit-review CTA.
+- [ ] Build the source-governed AI access-decision resource distinguishing OAI-SearchBot, GPTBot, and policy-versus-outcome boundaries.
+- [x] Evaluate Firehose for a narrow, source-governed web-monitoring workflow; do not activate rules or a live event stream without explicit scope and governance approval.
+- [x] Analyze and adapt the unimplemented Learn Swell concept into a relevant evidence-led learning and conversion experience for the current Swell site.
+- [ ] Transform the supplied GEO guide into a cohesive Swell authority-library spoke and align the resource-page presentation system without creating a parallel visual language.
+- [x] Rework the Swell resource experience around the old site’s narrative pacing, worked-condition flow, progressive depth, and clear next decision while retaining current brand and evidence controls.
+- [x] Publish the approved Start Here and GEO Operating Foundations resources through the Swell resource hub, sitemap, and language-model index after final local and live validation.
