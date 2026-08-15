@@ -154,3 +154,10 @@
 - [x] Prepare the approved source-led launch distribution packet and reply-ready operating path without publishing or sequencing unapproved outreach.
 - [x] Confirm launch readiness, record activated permitted actions, and distinguish remaining owner-gated or reply-gated controls.
 - [x] Publish the owner-confirmed first source-led Swell LinkedIn field note with its prepared tracked diagnostic route; no paid promotion or direct outreach was activated.
+- [ ] Document and operate a two-post-per-week, source-governed Swell LinkedIn cadence with 3–4 days between posts and one clear CTA per post.
+- [ ] Retain Drafts 02–03 as separately approved publication actions; do not publish, boost, or sequence them automatically.
+- [x] Add a publication standard requiring one claim-safe explanatory visual where it clarifies the source-led post and three to five focused topical hashtags, avoiding generic or outcome-implying tags.
+- [x] Document the Swell company voice as an evidence-led strategic operator and apply its premise-to-implication-to-question-to-CTA structure to the prepared source-led post workflow.
+- [x] Prepare a source-led Draft 02 explanatory visual showing the required agreement between visible page evidence and machine-readable declarations, without using client metrics or outcome claims.
+- [x] Design an evidence-governed Swell content-silo, hub-and-spoke, and internal-linking system that demonstrates expertise to buyers, search engines, and AI answer systems without visibility guarantees.
+- [x] Publish the first durable Swell Representation Foundations hub with source-visible guidance, crawlable contextual links, structured-data parity, and one diagnostic CTA.
