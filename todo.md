@@ -167,9 +167,11 @@
 - [x] Build the Representation Gap article as an unpublished Swell static page with source-visible markup and internal links; do not deploy until exact page approval is reconfirmed.
 - [x] Publish the owner-approved Representation Gap article through the Swell resource hub, sitemap, and language-model index after final local and live validation.
 - [x] Build the source-governed Evidence Contract resource with visible-evidence-to-markup parity and one fit-review CTA.
-- [ ] Build the source-governed AI access-decision resource distinguishing OAI-SearchBot, GPTBot, and policy-versus-outcome boundaries.
+- [x] Build the source-governed AI access-decision resource distinguishing OAI-SearchBot, GPTBot, and policy-versus-outcome boundaries.
 - [x] Evaluate Firehose for a narrow, source-governed web-monitoring workflow; do not activate rules or a live event stream without explicit scope and governance approval.
 - [x] Analyze and adapt the unimplemented Learn Swell concept into a relevant evidence-led learning and conversion experience for the current Swell site.
-- [ ] Transform the supplied GEO guide into a cohesive Swell authority-library spoke and align the resource-page presentation system without creating a parallel visual language.
+- [x] Transform the supplied GEO guide into a cohesive Swell authority-library spoke and align the resource-page presentation system without creating a parallel visual language.
 - [x] Rework the Swell resource experience around the old site’s narrative pacing, worked-condition flow, progressive depth, and clear next decision while retaining current brand and evidence controls.
 - [x] Publish the approved Start Here and GEO Operating Foundations resources through the Swell resource hub, sitemap, and language-model index after final local and live validation.
+- [x] Diagnose and correct any missing or non-loading CSS or JavaScript on the live Swell resource pages, then verify rendered asset delivery in production.
+- [x] Publish the owner-approved AI Access Decisions resource through the Swell resource hub, sitemap, and language-model index after final local and live validation.
