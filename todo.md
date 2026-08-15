@@ -79,7 +79,7 @@
 - [ ] Verify every live ARM and Swell primary CTA destination and attribution parameter, documenting the consultative next step and observable downstream handoff for each.
 - [x] Run owner-authorized end-to-end handoff tests for both ARM and Swell routes, or capture equivalent downstream attribution evidence before declaring conversion reconciliation complete.
 - [x] Complete the authorized internal ARM intake and Swell HubSpot handoff tests using only owner-controlled test data; record downstream attribution evidence.
-- [ ] Prepare a source-governed initial qualified-prospect list and individualized outreach sequence for the approved offers.
+- [x] Prepare a source-governed initial qualified-prospect list and individualized outreach sequence for the approved offers; Frontline and Conga are the only research-qualified accounts, with strict one-time public-channel and no-follow-up controls.
 - [x] Assess The Owlander Group warm relationship against the current decision, authority, evidence, and capacity gates using its authorized Notion source record before drafting any outreach.
 - [ ] Obtain the Owlander relationship owner’s confirmation of the appropriate recipient, active GEO decision, contact basis, and review capacity before approving the fit-check outreach draft.
 - [ ] Send approved outreach only to qualified prospects with logged source, offer hypothesis, decision context, and follow-up owner.
@@ -93,7 +93,7 @@
 - [x] Verify the HubSpot contact and meeting attribution fields for the Swell test booking, not only URL-level UTM parameters.
 - [x] Configure a durable HubSpot source/campaign/content attribution property set and a booking-handoff mapping before paid acquisition is activated.
 - [x] Exercise and document each primary ARM homepage CTA family through its actual production destination and observable consultative handoff.
-- [ ] Expand the internal-test follow-up review across mailbox templates, broader Gmail searches, and downstream automation logs.
+- [x] Expand the internal-test follow-up review across mailbox templates, broader Gmail searches, and downstream automation logs; the available evidence showed expected internal HubSpot/Calendar notices only, no active Zap workflows, and no accessible Base44 execution-log view.
 - [ ] Audit every live primary ARM and Swell CTA family directly in production, recording the exact destination, UTM parameters where applicable, and observable downstream handoff evidence.
 - [x] Create the dedicated HubSpot contact-property group and core ARM/Swell Source, Medium, Campaign, and Content fields for booking attribution.
 - [x] Populate the four custom attribution fields on an owner-controlled test contact and re-test the booking handoff: manual values persisted, while the booking did not auto-write them, so native HubSpot source/medium/campaign fields—not `armswell_*`—remain the current reporting path.
@@ -107,7 +107,7 @@
 - [x] Complete the owner-controlled booking retest for the deployed CTA-variant campaign convention and verify HubSpot records the encoded campaign value.
 - [x] Assess the enabled Apollo and Zapier capabilities, then define a no-paid-upgrade lead-research and automation path governed by the approved outreach standard.
 - [x] Authenticate the owner-controlled Apollo workspace before using it for source-governed prospect research; the owner-authorized workspace is active with 230 credits and no existing sequences or outbound activity.
-- [ ] Access the idle Perplexity subscription associated with `virtualmase@gmail.com` through an owner-controlled login, then apply the documented secure research-use policy without exposing credentials.
+- [x] Access the idle Perplexity subscription associated with `virtualmase@gmail.com` through an owner-controlled login, then apply the documented secure research-use policy without exposing credentials.
 - [x] Confirm the current Perplexity browser account is `ops@arm-agency.com` on the Free plan and document the account-access gap.
 - [x] Review user-authorized Gmail source material for marketing-language patterns and create a source-grounded full-scale Markdown language guide.
 - [x] Define a supervised subagent operating model that amplifies the team’s strongest disciplines without allowing unreviewed claims, outreach, or financial actions.
@@ -123,12 +123,12 @@
 - [x] Build a source-governed B2B software and IoT GEO prospect lane first, using public primary-source evidence and no contact activation; Frontline Data Solutions and Conga are research-qualified but contact-held.
 - [x] Build an agentic-marketing and operational-AI governance prospect lane second, using the same source and relationship-authority gates; no reviewed account cleared the initial target-band and relationship requirements.
 - [x] Locate and classify public company channels for Frontline Data Solutions and Conga without accessing personal contact data or hiring-manager routes: Frontline’s generic Contact Us form was used once with approval; Conga’s buyer-only Talk to Sales form is excluded, while its general-inquiry route is permitted pending a separate send confirmation.
-- [ ] Prepare and obtain explicit confirmation for one individualized, non-recruiting fit-check to each of Frontline Data Solutions and Conga; do not sequence or follow up without a reply.
+- [x] Prepare and obtain explicit confirmation for one individualized, non-recruiting fit-check to each of Frontline Data Solutions and Conga; both owner-authorized public-channel submissions are receipt-confirmed and remain reply-only.
 - [ ] Monitor the owner-authorized Frontline public-form fit-check for a reply; do not follow up, enrich contacts, or add the account to a sequence unless Frontline initiates a response.
 - [x] Create a reply-to-scope conversion playbook for approved inbound responses, including qualification, meeting, written scope, proposal, private collection, and delivery-owner handoffs.
 - [x] Verify the proposal-to-private-collection workflow is ready to use only after written scope acceptance, without adding public self-service checkout; a controlled internal deal packet now joins scope, collection, reconciliation, and onboarding.
 - [x] Establish a controlled fulfillment-to-evidence feedback loop that remains empty until an approved client source record authorizes publication.
-- [ ] Keep the owner-approved Conga general-inquiry fit-check as a non-blocking manual action; verify and log it only if the owner completes the open form.
+- [x] Keep the owner-approved Conga general-inquiry fit-check as a non-blocking manual action; verify and log it only if the owner completes the open form.
 - [x] Build a protected internal revenue-control board for opportunities, qualification state, evidence route, scope acceptance, private collection status, and onboarding readiness; do not expose client or payment data publicly.
 - [x] Audit the visitor-to-client path, trust evidence, traffic acquisition, meeting conversion, proposal acceptance, and collection controls; prioritize the fastest evidence-governed improvements.
 - [x] Define the private opportunity schema and apply a migration with no client payment details or public access paths.
@@ -141,6 +141,10 @@
 - [x] Add plain-language CTA companion copy to the Swell and ARM primary conversion paths: Check → Fit Review → Written Scope → Private Collection.
 - [x] Complete a route-by-route production audit for every live ARM and Swell primary CTA family, recording exact destinations, UTM parameters, and observable downstream handoff evidence where applicable.
 - [x] Document each CTA family as either a view-only preparation route or a record-creating intake/meeting route, then close conversion-path reconciliation only when its boundary or downstream evidence is verified.
-- [ ] Review the available internal-test notification template sources and document expected versus prohibited follow-up outputs.
-- [ ] Inspect available downstream automation or execution logs, or explicitly document why no such logs exist for systems in scope, before closing the internal-test follow-up review.
+- [x] Review the available internal-test notification template sources and document expected versus prohibited follow-up outputs.
+- [x] Inspect available downstream automation or execution logs, or explicitly document why no such logs exist for systems in scope, before closing the internal-test follow-up review.
 - [x] Record the three verified current opportunity states in the protected revenue-control board without adding personal contact or payment-instrument data.
+- [x] Submit the owner-approved one-time Conga general inquiry through the permitted public route, then record the receipt outcome without follow-up.
+- [x] Check whether the owner-controlled browser provides access to the `virtualmase@gmail.com` Perplexity research account without exposing credentials.
+- [x] Run and document one source-governed Perplexity research task under the secure research-use boundary, with no credential exposure or unsupported commercial claims.
+- [x] Reassess the Owlander authority gate after the owner’s blanket approval, retaining the block unless a valid recipient, current decision, relationship basis, and review capacity are independently established.
