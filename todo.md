@@ -163,7 +163,7 @@
 - [x] Publish the first durable Swell Representation Foundations hub with source-visible guidance, crawlable contextual links, structured-data parity, and one diagnostic CTA.
 - [x] Research and propose one distinctive source-governed long-form Swell article targeting a defensible buyer question, then await separate approval before publication or distribution.
 - [x] Draft the approved long-form Representation Gap article with primary-source citations, claim boundaries, and a held-for-review on-site publication packet.
-- [ ] Build and operate a citeworthy Swell content portfolio of durable buyer resources, source logs, named methods, contextual internal links, and publication controls without fabricated proof or visibility guarantees.
+- [x] Build and operate a citeworthy Swell content portfolio of durable buyer resources, source logs, named methods, contextual internal links, and publication controls without fabricated proof or visibility guarantees.
 - [x] Build the Representation Gap article as an unpublished Swell static page with source-visible markup and internal links; do not deploy until exact page approval is reconfirmed.
 - [x] Publish the owner-approved Representation Gap article through the Swell resource hub, sitemap, and language-model index after final local and live validation.
 - [x] Build the source-governed Evidence Contract resource with visible-evidence-to-markup parity and one fit-review CTA.
@@ -175,3 +175,6 @@
 - [x] Publish the approved Start Here and GEO Operating Foundations resources through the Swell resource hub, sitemap, and language-model index after final local and live validation.
 - [x] Diagnose and correct any missing or non-loading CSS or JavaScript on the live Swell resource pages, then verify rendered asset delivery in production.
 - [x] Publish the owner-approved AI Access Decisions resource through the Swell resource hub, sitemap, and language-model index after final local and live validation.
+- [x] Audit the live Swell resource library for source visibility, authorial clarity, internal linking, and claim-safety gaps before drafting the next citeworthy resource.
+- [x] Prepare a review-only Citeworthy Source Register improvement for the terminology and citable-content guides, adding visible review context, source boundaries, and contextual authority links before any public release.
+- [x] Publish the approved Citeworthy Source Register upgrades to the Citable Content and GEO terminology guides after final local and live validation.
