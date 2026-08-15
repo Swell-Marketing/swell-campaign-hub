@@ -149,3 +149,8 @@
 - [x] Run and document one source-governed Perplexity research task under the secure research-use boundary, with no credential exposure or unsupported commercial claims.
 - [x] Reassess the Owlander authority gate after the owner’s blanket approval, retaining the block unless a valid recipient, current decision, relationship basis, and review capacity are independently established.
 - [x] Verify whether the owner-supplied Owlander LinkedIn, Facebook, and public app channels establish a legitimate company-level fit-check route and sufficient current decision context; no qualifying route or decision evidence was found, and no contact was initiated.
+- [x] Establish and document the current production launch baseline across Swell, ARM, offers, booking handoffs, and reply controls.
+- [x] Remediate only the conversion or handoff defects that block a credible consultative-service launch; no new defect was found in the sampled live launch surfaces, so no speculative change was made.
+- [x] Prepare the approved source-led launch distribution packet and reply-ready operating path without publishing or sequencing unapproved outreach.
+- [x] Confirm launch readiness, record activated permitted actions, and distinguish remaining owner-gated or reply-gated controls.
+- [x] Publish the owner-confirmed first source-led Swell LinkedIn field note with its prepared tracked diagnostic route; no paid promotion or direct outreach was activated.
