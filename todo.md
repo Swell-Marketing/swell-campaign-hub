@@ -141,3 +141,6 @@
 - [x] Add plain-language CTA companion copy to the Swell and ARM primary conversion paths: Check → Fit Review → Written Scope → Private Collection.
 - [x] Complete a route-by-route production audit for every live ARM and Swell primary CTA family, recording exact destinations, UTM parameters, and observable downstream handoff evidence where applicable.
 - [x] Document each CTA family as either a view-only preparation route or a record-creating intake/meeting route, then close conversion-path reconciliation only when its boundary or downstream evidence is verified.
+- [ ] Review the available internal-test notification template sources and document expected versus prohibited follow-up outputs.
+- [ ] Inspect available downstream automation or execution logs, or explicitly document why no such logs exist for systems in scope, before closing the internal-test follow-up review.
+- [x] Record the three verified current opportunity states in the protected revenue-control board without adding personal contact or payment-instrument data.
