@@ -139,3 +139,5 @@
 - [x] Create a one-page “What to bring to a fit review” asset with scope-safe preparation guidance and an ordered consultative path.
 - [x] Link the fit-review preparation asset from Swell and ARM booking routes without changing approved offers or introducing public collection.
 - [x] Add plain-language CTA companion copy to the Swell and ARM primary conversion paths: Check → Fit Review → Written Scope → Private Collection.
+- [x] Complete a route-by-route production audit for every live ARM and Swell primary CTA family, recording exact destinations, UTM parameters, and observable downstream handoff evidence where applicable.
+- [x] Document each CTA family as either a view-only preparation route or a record-creating intake/meeting route, then close conversion-path reconciliation only when its boundary or downstream evidence is verified.
