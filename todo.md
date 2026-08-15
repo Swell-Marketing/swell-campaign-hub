@@ -135,3 +135,7 @@
 - [x] Add admin-only opportunity query and mutation procedures with server-side input validation.
 - [x] Build the DashboardLayout-based owner-only board route with create, edit, status, and evidence controls.
 - [x] Add unit coverage for opportunity validation and admin-only access, then validate the board with tests, type checks, and a production build.
+- [x] Prepare three public-primary-source-led Swell field-note drafts with tracked CTA variants and an owner approval packet; no external publication was performed.
+- [x] Create a one-page “What to bring to a fit review” asset with scope-safe preparation guidance and an ordered consultative path.
+- [x] Link the fit-review preparation asset from Swell and ARM booking routes without changing approved offers or introducing public collection.
+- [x] Add plain-language CTA companion copy to the Swell and ARM primary conversion paths: Check → Fit Review → Written Scope → Private Collection.
