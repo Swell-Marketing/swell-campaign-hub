@@ -218,3 +218,4 @@
 - [x] Perform a read-only Gmail check for the existing controlled `ops@swellmarketing.xyz` forwarding test, documenting delivery evidence without sending, replying, labeling, or changing mailbox rules.
 - [x] Implement a protected server-side campaign-hub handoff that emits a minimal HMAC-signed internal review event only after an explicit owner action, with no customer payload, outbound communication, CRM synchronization, payment, or advertising action.
 - [x] Evaluate Vapi voice intake, HeyGen video explainers, and YouTube Shorts as staged authority-distribution options tied to the Swell resource library, without activating a public persona, automated calls, or unsupervised publishing.
+- [x] Perform a read-only Gmail reply check for the owner-authorized Frontline and Conga fit-check submissions, without sending, drafting, labeling, or following up.
