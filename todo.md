@@ -193,3 +193,8 @@
 - [x] Integrate the supplied dark architectural brand-image reference set through accessible, responsive, performance-conscious visual placements with descriptive text alternatives.
 - [x] Add automated coverage for the free tool and source/claim boundaries, then validate the authority-system release before publishing.
 - [x] Retire the paused Firehose external credential smoke test so the discontinued monitoring workflow cannot block unrelated authority-system validation.
+- [x] Transform the approved Draft 02 field note into one source-governed durable resource that serves a specific reader decision instead of increasing distribution volume.
+- [x] Establish the shared Swell/ARM “machine-readable for people” editorial position with an explicit boundary against AI-content volume, bloat, outcome prediction, and synthetic proof.
+- [x] Add a citation-backed image-SEO guidance section with useful captions, descriptive image metadata, and contextual links to an authoritative source and related Swell resources.
+- [x] Add a refined canonical title, description, social metadata, and machine-readable visible-content parity for the new resource without attempting to control search snippets.
+- [x] Validate the completed resource’s citations, external links, metadata, image accessibility, and claim boundaries before requesting public release approval.
