@@ -66,7 +66,7 @@
 - [x] Inspect all plausible uploaded receipt files and include only attributable operating obligations in the cash-floor model.
 - [x] Prioritize the remaining control gaps by their effect on qualified lead generation, proposal conversion, and first collection.
 - [x] Create a source-governed lead-to-sale operating board covering CTA source, qualification state, owner, next action, proposal status, and collection state.
-- [ ] Reconcile ARM and Swell public conversion paths so every primary CTA has one clear consultative next step and a verifiable handoff.
+- [x] Reconcile ARM and Swell public conversion paths so every primary CTA has one clear consultative next step and a verifiable handoff.
 - [x] Validate the ARM Signal Check and Audit Fit Review routes end-to-end, including owner-authorized intake handling and attribution capture.
 - [x] Define the no-spend 30-day acquisition cadence, response standard, and proposal follow-up sequence for the three approved offers.
 - [x] Validate the campaign hub’s current conversion routes, tests, type checks, and production build; save a checkpoint for the completed control work.
@@ -76,7 +76,7 @@
 - [x] Re-run live buyer-journey validation against the deployed ARM homepage and audit route, confirming Signal Check routing, Audit Fit Review CTAs, and approved ARM offer labels and pricing.
 - [x] Align the ARM Signal Check footer offer labels and prices with the approved consultative ARM sales menu.
 - [x] Remove the unapproved Swell GEO Starter offer and align live Swell pricing and diagnostic copy to the approved consultative service menu.
-- [ ] Verify every live ARM and Swell primary CTA destination and attribution parameter, documenting the consultative next step and observable downstream handoff for each.
+- [x] Verify every live ARM and Swell primary CTA destination and attribution parameter, documenting the consultative next step and observable downstream handoff for each.
 - [x] Run owner-authorized end-to-end handoff tests for both ARM and Swell routes, or capture equivalent downstream attribution evidence before declaring conversion reconciliation complete.
 - [x] Complete the authorized internal ARM intake and Swell HubSpot handoff tests using only owner-controlled test data; record downstream attribution evidence.
 - [x] Prepare a source-governed initial qualified-prospect list and individualized outreach sequence for the approved offers; Frontline and Conga are the only research-qualified accounts, with strict one-time public-channel and no-follow-up controls.
@@ -94,7 +94,7 @@
 - [x] Configure a durable HubSpot source/campaign/content attribution property set and a booking-handoff mapping before paid acquisition is activated.
 - [x] Exercise and document each primary ARM homepage CTA family through its actual production destination and observable consultative handoff.
 - [x] Expand the internal-test follow-up review across mailbox templates, broader Gmail searches, and downstream automation logs; the available evidence showed expected internal HubSpot/Calendar notices only, no active Zap workflows, and no accessible Base44 execution-log view.
-- [ ] Audit every live primary ARM and Swell CTA family directly in production, recording the exact destination, UTM parameters where applicable, and observable downstream handoff evidence.
+- [x] Audit every live primary ARM and Swell CTA family directly in production, recording the exact destination, UTM parameters where applicable, and observable downstream handoff evidence.
 - [x] Create the dedicated HubSpot contact-property group and core ARM/Swell Source, Medium, Campaign, and Content fields for booking attribution.
 - [x] Populate the four custom attribution fields on an owner-controlled test contact and re-test the booking handoff: manual values persisted, while the booking did not auto-write them, so native HubSpot source/medium/campaign fields—not `armswell_*`—remain the current reporting path.
 - [x] Populate the existing Internal Attribution Test contact with owner-controlled sample source, medium, campaign, and content values, then verify the values persist in HubSpot.
