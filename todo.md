@@ -184,3 +184,5 @@
 - [x] Create an evidence-backed agent-readiness portfolio narrative that explains what AI-mediated discovery and browser agents require without promising rankings, citations, leads, or agent behavior.
 - [x] Align the campaign hub’s public product presentation and conversion links with the revised agent-readiness portfolio while preserving the approved consultative and private-collection flow.
 - [x] Add automated coverage for the collaboration handoff and the revised portfolio’s required claim-safety language, then validate and checkpoint the work.
+- [x] Align the live ARM Signal Check and direct-fit-review route copy with the revised evidence-led agent-readiness portfolio, removing legacy citation and Share-of-Model framing while preserving the approved intake controls.
+- [x] Add and run a static contract check for the ARM audit route’s intake boundary and revised agent-readiness terminology before publishing the remediation.
