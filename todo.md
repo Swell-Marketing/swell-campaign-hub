@@ -113,7 +113,7 @@
 - [x] Define a supervised subagent operating model that amplifies the team’s strongest disciplines without allowing unreviewed claims, outreach, or financial actions.
 - [ ] Re-run the owner-controlled booking test with a fresh contact identity after the attribution capture layer is implemented.
 - [x] Remove or restore the four confirmed Coreweaver Labs 404 URLs listed in the production sitemap, then verify the linked-route and sitemap state after deployment.
-- [ ] Monitor the next Ahrefs crawls for ARM Agency and Coreweaver Labs to confirm the verified production remediations are reflected in the health reports.
+- [ ] Monitor the next Ahrefs crawls for ARM Agency and Coreweaver Labs to confirm the verified production remediations are reflected in the health reports. Coreweaver’s 15 August recrawl is now recorded; ARM’s post-remediation recrawl remains outstanding.
 - [x] Investigate the reported arm-agency.com Ahrefs health-score decline and rule out sitemap or redirect regressions from the buyer-journey changes.
 - [x] Add the owner-authorized `ARM/Swell Evidence URL` single-line contact property (`armswell_evidence_url`) to the `ARM + Swell Attribution` HubSpot group with its approved provenance description.
 - [x] Verify the Google Workspace Business Starter payment baseline for `arm-agency.com`: $16.80 was applied on August 10, 2026.
