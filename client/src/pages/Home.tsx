@@ -73,6 +73,29 @@ const portfolioCards = [
   },
 ];
 
+const AUTHORITY_TOOL_URL = "https://swellmarketing.xyz/resources/representation-readiness-map/";
+
+const authoritySources = [
+  {
+    role: "Primary source",
+    title: "Google Search Central",
+    body: "Use the official guidance to separate durable search foundations from unsupported AI-search tactics or outcome promises.",
+    href: "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+  },
+  {
+    role: "Primary source",
+    title: "web.dev",
+    body: "Agent-friendly interface guidance connects semantic controls, stable layouts, and accessible labels to a clearer path for people and browser agents.",
+    href: "https://web.dev/articles/ai-agent-site-ux",
+  },
+  {
+    role: "Identity reference",
+    title: "Schema.org Organization",
+    body: "Organization identity references should clarify who an entity is; they do not turn a profile or public listing into an endorsement.",
+    href: "https://schema.org/Organization",
+  },
+];
+
 function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
     <a href="#top" className="brand-mark" aria-label="Swell Marketing home">
@@ -212,6 +235,90 @@ export default function Home() {
               </p>
               <DirectionalLink href={CAMPAIGN_LINKS.diagnosticHero} onClick={() => trackIntent(TRACKING_EVENTS.diagnosticIntent, "campaign_intro")}>Start with the representation gap</DirectionalLink>
             </div>
+          </div>
+        </section>
+
+        <section className="authority-atlas" aria-labelledby="authority-title">
+          <div className="page-container">
+            <div className="authority-atlas__heading">
+              <div>
+                <p className="section-kicker">Authority system</p>
+                <h2 id="authority-title">Make the record<br /><em>inspectable.</em></h2>
+              </div>
+              <p>
+                Useful authority is not a volume metric. It is the condition in which a buyer can identify the organization, inspect what supports a claim, follow a clear action, and understand the boundary of the evidence.
+              </p>
+            </div>
+
+            <div className="authority-atlas__grid">
+              <figure className="authority-hero-image">
+                <img
+                  src="/manus-storage/representation-gap_44e0c11d.png"
+                  alt="A dark architectural structure opposite a layered public information record, illustrating the gap between an organization and how systems can inspect it."
+                  width={1672}
+                  height={941}
+                  loading="lazy"
+                />
+                <figcaption>Representation gap: the public record requires an inspectable source of truth before more distribution.</figcaption>
+              </figure>
+
+              <div className="authority-atlas__copy">
+                <p className="section-kicker">Free local worksheet</p>
+                <h3>Start with what can be checked.</h3>
+                <p>
+                  The Representation Readiness Map turns eight plain-language responses into a private inspection list across identity, visible evidence, public access, and buyer decision surfaces. It does not score an organization, retain answers, or predict a search, AI, or browser-agent outcome.
+                </p>
+                <a className="button button--lime" href={AUTHORITY_TOOL_URL} target="_blank" rel="noreferrer">
+                  Open the free Readiness Map <ArrowUpRight size={18} aria-hidden="true" />
+                </a>
+                <p className="authority-atlas__note">No account. No email gate. No retained answers.</p>
+              </div>
+            </div>
+
+            <div className="authority-visual-grid" aria-label="Evidence, access, and record imagery">
+              <figure className="authority-visual-card">
+                <img
+                  src="/manus-storage/evidence-system_259f69bd.png"
+                  alt="A dark architectural evidence system with labeled organization, people, sources, identifiers, publications, citations, and verification layers."
+                  width={1672}
+                  height={941}
+                  loading="lazy"
+                />
+                <figcaption><span>01</span> Evidence is visible before it is machine-readable.</figcaption>
+              </figure>
+              <figure className="authority-visual-card">
+                <img
+                  src="/manus-storage/first-constraint_a7af08d9.png"
+                  alt="A dark architectural corridor with ordered rails and a lighted path, representing an upstream constraint that should be inspected before downstream work."
+                  width={1672}
+                  height={941}
+                  loading="lazy"
+                />
+                <figcaption><span>02</span> The first constraint determines the next valid action.</figcaption>
+              </figure>
+              <figure className="authority-visual-card">
+                <img
+                  src="/manus-storage/entity-architecture_f5f839c5.png"
+                  alt="An overhead evidence workspace showing a central organization record linked to sources, citations, relationships, and verification materials."
+                  width={1122}
+                  height={1402}
+                  loading="lazy"
+                />
+                <figcaption><span>03</span> Entity references explain relationship; they do not imply endorsement.</figcaption>
+              </figure>
+            </div>
+
+            <div className="authority-source-grid" aria-label="Primary sources and reference roles">
+              {authoritySources.map((source) => (
+                <article className="authority-source-card" key={source.title}>
+                  <p>{source.role}</p>
+                  <h3>{source.title}</h3>
+                  <span>{source.body}</span>
+                  <a href={source.href} target="_blank" rel="noreferrer">Open the source <ArrowUpRight size={15} aria-hidden="true" /></a>
+                </article>
+              ))}
+            </div>
+            <p className="authority-disclosure">Independent examples—including a competitor—belong here only when a specific public practice can be described fairly. A link is labeled for its actual role and never used to imply affiliation, endorsement, or comparative superiority.</p>
           </div>
         </section>
 

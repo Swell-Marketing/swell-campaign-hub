@@ -186,3 +186,10 @@
 - [x] Add automated coverage for the collaboration handoff and the revised portfolio’s required claim-safety language, then validate and checkpoint the work.
 - [x] Align the live ARM Signal Check and direct-fit-review route copy with the revised evidence-led agent-readiness portfolio, removing legacy citation and Share-of-Model framing while preserving the approved intake controls.
 - [x] Add and run a static contract check for the ARM audit route’s intake boundary and revised agent-readiness terminology before publishing the remediation.
+- [x] Research and prioritize the evidence, entity, technical-access, and buyer-decision questions prospective Swell clients actively need answered, then map them to durable content silos.
+- [x] Define a transparent external-reference standard that distinguishes primary sources, social profiles, company/entity listings, and competitor references without implying endorsement or fabricating comparative claims.
+- [x] Design and build a useful no-account, no-retention free representation-readiness tool that helps visitors identify evidence, entity, access, and decision-record gaps without scoring them or promising outcomes.
+- [x] Add source-visible citations and claim-safe external entity references to the relevant Swell authority surfaces using verifiable destinations only.
+- [x] Integrate the supplied dark architectural brand-image reference set through accessible, responsive, performance-conscious visual placements with descriptive text alternatives.
+- [x] Add automated coverage for the free tool and source/claim boundaries, then validate the authority-system release before publishing.
+- [x] Retire the paused Firehose external credential smoke test so the discontinued monitoring workflow cannot block unrelated authority-system validation.

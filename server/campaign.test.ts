@@ -50,6 +50,18 @@ describe("Swell campaign landing configuration", () => {
     expect(markup).toContain("No public checkout.");
   });
 
+  it("renders the visual authority system with the no-retention free-tool boundary and visible source roles", () => {
+    const markup = renderToStaticMarkup(createElement(Home));
+
+    expect(markup).toContain("Representation Readiness Map");
+    expect(markup).toContain('href="https://swellmarketing.xyz/resources/representation-readiness-map/"');
+    expect(markup).toContain("No account. No email gate. No retained answers.");
+    expect(markup).toContain("Primary source");
+    expect(markup).toContain("Identity reference");
+    expect(markup).toContain("never used to imply affiliation, endorsement, or comparative superiority");
+    expect(markup).toContain("/manus-storage/representation-gap_44e0c11d.png");
+  });
+
   it("renders every canonical navigation and campaign CTA destination", () => {
     const markup = renderToStaticMarkup(createElement(Home));
 
