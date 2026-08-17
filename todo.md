@@ -214,3 +214,4 @@
 - [x] Reassess the Activepieces pilot for the simplest secure managed-cloud or open-source deployment option, including the local proof’s current state, operator burden, cost, persistence, approval gates, and data-exposure boundary before selecting a replacement path.
 - [x] Provision the approved managed Activepieces cloud workspace under `ops@arm-agency.com`, retaining the localhost proof as the private self-hosting exit path and enabling no external actions.
 - [x] Build and validate an unpublished HMAC-signed Activepieces cloud flow that checks the owned `swell-campaign-hub` source, creates only an internal private review record on the approved branch, and terminates the otherwise branch with no action.
+- [x] Publish and verify the owner-approved HMAC-protected Activepieces cloud endpoint while retaining the no-external-action boundary and no campaign-hub connection.
