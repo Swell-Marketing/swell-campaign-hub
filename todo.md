@@ -113,7 +113,7 @@
 - [x] Define a supervised subagent operating model that amplifies the team’s strongest disciplines without allowing unreviewed claims, outreach, or financial actions.
 - [ ] Re-run the owner-controlled booking test with a fresh contact identity after the attribution capture layer is implemented.
 - [x] Remove or restore the four confirmed Coreweaver Labs 404 URLs listed in the production sitemap, then verify the linked-route and sitemap state after deployment.
-- [ ] Monitor the next Ahrefs crawls for ARM Agency and Coreweaver Labs to confirm the verified production remediations are reflected in the health reports. Coreweaver’s 15 August recrawl is now recorded; ARM’s post-remediation recrawl remains outstanding.
+- [ ] Monitor the next Ahrefs crawls for ARM Agency and Coreweaver Labs to confirm the verified production remediations are reflected in the health reports. The 15 August Coreweaver.io alert is a separate-domain audit; post-remediation recrawls for both managed properties remain outstanding.
 - [x] Investigate the reported arm-agency.com Ahrefs health-score decline and rule out sitemap or redirect regressions from the buyer-journey changes.
 - [x] Add the owner-authorized `ARM/Swell Evidence URL` single-line contact property (`armswell_evidence_url`) to the `ARM + Swell Attribution` HubSpot group with its approved provenance description.
 - [x] Verify the Google Workspace Business Starter payment baseline for `arm-agency.com`: $16.80 was applied on August 10, 2026.
@@ -200,3 +200,5 @@
 - [x] Validate the completed resource’s citations, external links, metadata, image accessibility, and claim boundaries before requesting public release approval.
 - [x] Apply and document an English-only standard for code, configuration, comments, tests, commit messages, file names, and implementation-facing project documentation so all work remains manually reviewable.
 - [x] Prepare a source-led Draft 03 LinkedIn review package with one claim-safe explanatory visual and an explicit manual-only owner confirmation gate.
+- [x] Correct the Ahrefs monitoring record to distinguish the separate Coreweaver.io journal audit from the still-unconfirmed Coreweaver Labs recrawl.
+- [x] Verify access to `Coreweaver-Labs-Inc/coreweaver_` through the connected GitHub identity and document its separate GitHub-managed deployment path from Hostinger-uploaded Coreweaver.io.
