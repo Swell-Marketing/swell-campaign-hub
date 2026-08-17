@@ -221,3 +221,5 @@
 - [x] Perform a read-only Gmail reply check for the owner-authorized Frontline and Conga fit-check submissions, without sending, drafting, labeling, or following up.
 - [x] Send one new owner-controlled internal forwarding test to `ops@swellmarketing.xyz`, then verify whether exactly one copy reaches `ops@arm-agency.com` without any reply, label, rule, or automation change. No copy was observed in the immediate ARM inbox checks; end-to-end delivery remains unresolved.
 - [x] Inspect Hostinger delivery evidence for the two controlled Swell forwarding tests without changing the active forwarder, DNS, mailbox, or automation settings.
+- [x] Configure the dedicated Campaign Hub repository for an independent static Vercel demonstration deployment, preserving the existing full-stack Manus runtime and prohibiting public checkout or unsupported claims.
+- [ ] Bind the independent Campaign Hub Vercel deployment to `swellmarketing.arm-agency.com` through the authoritative Vercel DNS zone without modifying the ARM production project.
