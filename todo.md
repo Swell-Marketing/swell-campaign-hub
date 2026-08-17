@@ -179,3 +179,8 @@
 - [x] Audit the live Swell resource library for source visibility, authorial clarity, internal linking, and claim-safety gaps before drafting the next citeworthy resource.
 - [x] Prepare a review-only Citeworthy Source Register improvement for the terminology and citable-content guides, adding visible review context, source boundaries, and contextual authority links before any public release.
 - [x] Publish the approved Citeworthy Source Register upgrades to the Citable Content and GEO terminology guides after final local and live validation.
+- [x] Add a collaboration-ready project handoff that gives future agents a safe map of architecture, commands, boundaries, approved offers, and non-negotiable claim controls.
+- [x] Audit the approved Swell and ARM offers against current agent-readiness demand and eliminate delivery promises that depend on retired Firehose monitoring or unsupported outcome claims.
+- [x] Create an evidence-backed agent-readiness portfolio narrative that explains what AI-mediated discovery and browser agents require without promising rankings, citations, leads, or agent behavior.
+- [x] Align the campaign hub’s public product presentation and conversion links with the revised agent-readiness portfolio while preserving the approved consultative and private-collection flow.
+- [x] Add automated coverage for the collaboration handoff and the revised portfolio’s required claim-safety language, then validate and checkpoint the work.

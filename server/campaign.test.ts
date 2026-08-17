@@ -39,6 +39,17 @@ describe("Swell campaign landing configuration", () => {
     expect(markup).toContain("The Diagnostic");
   });
 
+  it("renders the evidence-limited agent-readiness portfolio without public checkout", () => {
+    const markup = renderToStaticMarkup(createElement(Home));
+
+    expect(markup).toContain("Agent-readiness portfolio");
+    expect(markup).toContain("ARM Signal Audit · $2,500 fixed scope");
+    expect(markup).toContain("Swell GEO Growth · $2,500 / month");
+    expect(markup).toContain("Swell GEO Scale · $3,500 / month · ARM Mandate Pro · $5,000 / month");
+    expect(markup).toContain("not a promise about a third-party answer");
+    expect(markup).toContain("No public checkout.");
+  });
+
   it("renders every canonical navigation and campaign CTA destination", () => {
     const markup = renderToStaticMarkup(createElement(Home));
 

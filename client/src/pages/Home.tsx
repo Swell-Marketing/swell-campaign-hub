@@ -49,6 +49,30 @@ const postCards = [
   },
 ];
 
+const portfolioCards = [
+  {
+    id: "01",
+    eyebrow: "Establish the record",
+    title: "Name the first constraint.",
+    offer: "ARM Signal Audit · $2,500 fixed scope",
+    body: "For a consequential representation or workflow question that needs a supported fact base, a clear owner, and a prioritized decision record before recurring work begins.",
+  },
+  {
+    id: "02",
+    eyebrow: "Make information usable",
+    title: "Create inspectable clarity.",
+    offer: "Swell GEO Growth · $2,500 / month",
+    body: "For teams that need a source-led representation cadence: visible evidence, structured-data parity, stable internal paths, and a documented monthly review.",
+  },
+  {
+    id: "03",
+    eyebrow: "Operate controlled change",
+    title: "Keep decisions governable.",
+    offer: "Swell GEO Scale · $3,500 / month · ARM Mandate Pro · $5,000 / month",
+    body: "For organizations coordinating recurring content, technical representation, source governance, or qualified agent-workflow controls across named reviewers and decision points.",
+  },
+];
+
 function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
     <a href="#top" className="brand-mark" aria-label="Swell Marketing home">
@@ -156,7 +180,7 @@ export default function Home() {
               <em>Grow Brands.</em>
             </h1>
             <p className="hero__lede reveal-item">
-              The room remembers brands it can verify. Swell finds where answers overlook or misrepresent your brand, then builds evidence machines can inspect.
+              The room remembers brands it can verify. Swell maps what your source records support, then makes that information easier for people and systems to inspect.
             </p>
             <div className="hero__actions reveal-item">
               <a className="button button--lime" href={CAMPAIGN_LINKS.diagnosticHero} onClick={() => trackIntent(TRACKING_EVENTS.diagnosticIntent, "hero")}>
@@ -274,6 +298,41 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="portfolio-section" aria-labelledby="portfolio-title">
+          <div className="page-container">
+            <div className="portfolio-section__header">
+              <div>
+                <p className="section-kicker">Agent-readiness portfolio</p>
+                <h2 id="portfolio-title">Make the record<br /><em>usable.</em></h2>
+              </div>
+              <p>
+                AI-mediated discovery and browser agents need clear information, stable paths, and accountable context. The right engagement depends on the first constraint—not a promise about a third-party answer.
+              </p>
+            </div>
+            <div className="portfolio-grid">
+              {portfolioCards.map((card) => (
+                <article key={card.id} className="portfolio-card">
+                  <span className="portfolio-card__index">{card.id}</span>
+                  <p className="post-card__eyebrow">{card.eyebrow}</p>
+                  <h3>{card.title}</h3>
+                  <p>{card.body}</p>
+                  <div className="portfolio-card__offer">{card.offer}</div>
+                  <a
+                    className="portfolio-card__cta"
+                    href={CAMPAIGN_LINKS.booking}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={() => trackIntent(TRACKING_EVENTS.workingSessionIntent, `portfolio_${card.id}`)}
+                  >
+                    Discuss the fit <ArrowUpRight size={16} aria-hidden="true" />
+                  </a>
+                </article>
+              ))}
+            </div>
+            <p className="portfolio-section__note">No public checkout. A fit review confirms the evidence boundary, delivery capacity, accepted scope, and private collection path before work begins.</p>
+          </div>
+        </section>
+
         <section className="evidence-section" aria-labelledby="evidence-title">
           <div className="page-container">
             <div className="evidence-section__header">
@@ -334,8 +393,8 @@ export default function Home() {
             <div className="session-card__mark"><Check size={22} /></div>
             <p className="section-kicker">Working session</p>
             <h2 id="session-title">Bring the answer<br /><em>costing you trust.</em></h2>
-            <p>
-              Name what the AI product says, what your evidence supports, and why the difference matters commercially. We will recommend one next step.
+              <p>
+              Name the answer a buyer, search system, or browser agent may encounter, what your evidence supports, and why the difference matters commercially. We will recommend one next step.
             </p>
             <a className="button button--outline" href={CAMPAIGN_LINKS.booking} target="_blank" rel="noreferrer" onClick={() => trackIntent(TRACKING_EVENTS.workingSessionIntent, "working_session") }>
               Book a working session <MoveRight size={18} aria-hidden="true" />
@@ -348,7 +407,7 @@ export default function Home() {
         <div className="page-container">
           <div className="footer-top">
             <BrandMark />
-            <p>Technical foundations, citable content, authority signals, and measurable AI visibility for brands building their next growth channel.</p>
+            <p>Technical foundations, source-led content, authority signals, and governed representation work for brands building their next growth channel.</p>
           </div>
           <div className="footer-grid">
             <div>
