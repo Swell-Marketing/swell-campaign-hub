@@ -202,3 +202,4 @@
 - [x] Prepare a source-led Draft 03 LinkedIn review package with one claim-safe explanatory visual and an explicit manual-only owner confirmation gate.
 - [x] Correct the Ahrefs monitoring record to distinguish the separate Coreweaver.io journal audit from the still-unconfirmed Coreweaver Labs recrawl.
 - [x] Verify access to `Coreweaver-Labs-Inc/coreweaver_` through the connected GitHub identity and document its separate GitHub-managed deployment path from Hostinger-uploaded Coreweaver.io.
+- [x] Apply the owner-mandated English-only implementation and review standard to the verified Coreweaver Labs GitHub repository without changing its deployed application behavior.
