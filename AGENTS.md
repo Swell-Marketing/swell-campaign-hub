@@ -40,8 +40,8 @@ Changes that span properties must preserve a single consultative next step. A pu
 | Topic | Required behavior |
 | --- | --- |
 | Client proof | Do not invent, infer, seed, or hardcode testimonials, ratings, reviews, client names, KPIs, outcomes, or success claims. Use the approved evidence contract only. |
-| Outreach | Frontline and Conga are reply-only; do not follow up or enrich contacts without a reply. Owlander remains blocked until the relationship owner, recipient, current decision, basis, and capacity are confirmed. |
-| Social publishing | Each LinkedIn post needs its own owner confirmation. Draft 02 is held; do not publish, boost, or schedule it. |
+| Outreach | Do not follow up, enrich contacts, or add anyone to a sequence without documented authorization and a recipient-initiated response after any one-time approved contact. |
+| Social publishing | Each LinkedIn post needs its own owner confirmation. Do not publish, boost, or schedule content automatically. |
 | Paid media | No campaign activation until a client has been collected, delivery capacity is confirmed, attribution is reconciled, and the owner has completed payment/account setup. |
 | Payments | No public checkout. Send private payment instructions only after versioned written scope acceptance. |
 | Firehose | The prior Swell authority-library tap is **paused** by owner direction. Do not resume, stream, modify rules, or create replacement monitoring unless the owner explicitly reapproves a narrow purpose, source scope, retention plan, and review cadence. |
