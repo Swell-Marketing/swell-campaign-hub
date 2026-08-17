@@ -198,3 +198,5 @@
 - [x] Add a citation-backed image-SEO guidance section with useful captions, descriptive image metadata, and contextual links to an authoritative source and related Swell resources.
 - [x] Add a refined canonical title, description, social metadata, and machine-readable visible-content parity for the new resource without attempting to control search snippets.
 - [x] Validate the completed resource’s citations, external links, metadata, image accessibility, and claim boundaries before requesting public release approval.
+- [x] Apply and document an English-only standard for code, configuration, comments, tests, commit messages, file names, and implementation-facing project documentation so all work remains manually reviewable.
+- [x] Prepare a source-led Draft 03 LinkedIn review package with one claim-safe explanatory visual and an explicit manual-only owner confirmation gate.

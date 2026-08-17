@@ -39,6 +39,7 @@ Changes that span properties must preserve a single consultative next step. A pu
 
 | Topic | Required behavior |
 | --- | --- |
+| Implementation language | Write code, configuration, comments, tests, commit messages, file names, and implementation-facing documentation in English. Use another language only for explicitly approved public-facing localized content, with an English review note where it affects implementation. |
 | Client proof | Do not invent, infer, seed, or hardcode testimonials, ratings, reviews, client names, KPIs, outcomes, or success claims. Use the approved evidence contract only. |
 | Outreach | Do not follow up, enrich contacts, or add anyone to a sequence without documented authorization and a recipient-initiated response after any one-time approved contact. |
 | Social publishing | Each LinkedIn post needs its own owner confirmation. Do not publish, boost, or schedule content automatically. |
