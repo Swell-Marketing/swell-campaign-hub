@@ -203,3 +203,7 @@
 - [x] Correct the Ahrefs monitoring record to distinguish the separate Coreweaver.io journal audit from the still-unconfirmed Coreweaver Labs recrawl.
 - [x] Verify access to `Coreweaver-Labs-Inc/coreweaver_` through the connected GitHub identity and document its separate GitHub-managed deployment path from Hostinger-uploaded Coreweaver.io.
 - [x] Apply the owner-mandated English-only implementation and review standard to the verified Coreweaver Labs GitHub repository without changing its deployed application behavior.
+- [ ] Design and create, if supported, a controlled HubSpot intake and booking pathway for `ops@swellmarketing.xyz` that preserves attribution, owner review, and no-unapproved-follow-up controls.
+- [ ] Design a supervised HubSpot automation system that handles routine intake, attribution, routing, and owner notifications while keeping outbound messaging, scope acceptance, collection, and paid activation behind explicit approval gates.
+- [ ] Configure the existing Swell Marketing HubSpot portal as a separate lean intake path, retaining Mason’s master-operator account and keeping ARM/Apollo operations distinct; do not merge portals or import ARM settings wholesale.
+- [ ] Establish a supervised forwarding and review path from `ops@swellmarketing.xyz` to the `ops@arm-agency.com` operations inbox, preserving source identity and prohibiting uncontrolled external replies. The retained-copy Hostinger forwarder is active; end-to-end controlled delivery evidence remains pending.
