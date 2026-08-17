@@ -173,6 +173,11 @@ export default function RevenueControlBoard() {
   const [form, setForm] = useState<OpportunityForm>(emptyForm);
   const isAdmin = user?.role === "admin";
 
+  const requestInternalReviewMutation = trpc.internalReview.request.useMutation({
+    onSuccess: result => toast.success(`Internal review event ${result.eventId} was created.`),
+    onError: error => toast.error(error.message),
+  });
+
   const opportunitiesQuery = trpc.opportunities.list.useQuery(undefined, {
     enabled: isAdmin,
     retry: false,
@@ -286,9 +291,20 @@ export default function RevenueControlBoard() {
               </p>
             </div>
             {isAdmin && (
-              <Button onClick={openNew} className="bg-lime-300 text-slate-950 hover:bg-lime-200">
-                <Plus className="mr-2 h-4 w-4" /> Add opportunity
-              </Button>
+              <div className="flex flex-wrap gap-3">
+                <Button
+                  variant="outline"
+                  onClick={() => requestInternalReviewMutation.mutate()}
+                  disabled={requestInternalReviewMutation.isPending}
+                  className="border-lime-300/30 text-lime-200 hover:bg-lime-300/10 hover:text-lime-100"
+                >
+                  <ShieldCheck className="mr-2 h-4 w-4" />
+                  {requestInternalReviewMutation.isPending ? "Creating review event…" : "Create internal review event"}
+                </Button>
+                <Button onClick={openNew} className="bg-lime-300 text-slate-950 hover:bg-lime-200">
+                  <Plus className="mr-2 h-4 w-4" /> Add opportunity
+                </Button>
+              </div>
             )}
           </div>
         </section>
